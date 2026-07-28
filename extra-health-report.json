@@ -1,135 +1,70 @@
 {
-  "checked_at": "2026-07-27T21:53:38Z",
+  "checked_at": "2026-07-28T10:13:29Z",
   "source": "https://jikun8.zmxoo.xyz/linkapi?v=20260723&placeholder=1&placeholder=2&placeholder=3",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 66,
   "live_nodes": [
     {
-      "name": "US - zhuhai.uk 04",
-      "delay": 38,
-      "type": "vless"
-    },
-    {
-      "name": "US - zhuhai.uk 01",
-      "delay": 63,
-      "type": "vless"
-    },
-    {
-      "name": "US - zhuhai.uk 02",
-      "delay": 97,
-      "type": "vless"
-    },
-    {
       "name": "US - zhuhai.uk 08",
-      "delay": 251,
+      "delay": 286,
       "type": "vless"
     },
     {
       "name": "US - zhuhai.uk 06",
-      "delay": 266,
+      "delay": 289,
       "type": "vless"
     },
     {
       "name": "TW - zhuhai.uk 06",
-      "delay": 440,
-      "type": "vless"
-    },
-    {
-      "name": "JP - zhuhai.uk 03",
-      "delay": 473,
-      "type": "vless"
-    },
-    {
-      "name": "JP - zhuhai.uk 06",
-      "delay": 488,
-      "type": "vless"
-    },
-    {
-      "name": "CA - zhuhai.uk 01",
-      "delay": 553,
+      "delay": 489,
       "type": "vless"
     },
     {
       "name": "MO - zhuhai.uk 01",
-      "delay": 602,
+      "delay": 707,
       "type": "vless"
     },
     {
-      "name": "KR - zhuhai.uk 03",
-      "delay": 619,
-      "type": "vless"
-    },
-    {
-      "name": "KR - zhuhai.uk 05",
-      "delay": 625,
-      "type": "vless"
-    },
-    {
-      "name": "KR - zhuhai.uk 01",
-      "delay": 672,
-      "type": "vless"
-    },
-    {
-      "name": "HK - zhuhai.uk 07",
-      "delay": 679,
-      "type": "vless"
-    },
-    {
-      "name": "HK - zhuhai.uk 04",
-      "delay": 680,
-      "type": "vless"
-    },
-    {
-      "name": "SG - zhuhai.uk 01",
-      "delay": 700,
+      "name": "CA - zhuhai.uk 01",
+      "delay": 737,
       "type": "vless"
     },
     {
       "name": "TW - zhuhai.uk 26",
-      "delay": 762,
+      "delay": 827,
       "type": "vless"
     },
     {
       "name": "SG - zhuhai.uk 07",
-      "delay": 938,
-      "type": "vless"
-    },
-    {
-      "name": "UA - zhuhai.uk 01",
-      "delay": 1198,
-      "type": "vless"
-    },
-    {
-      "name": "UA - zhuhai.uk 02",
-      "delay": 1198,
+      "delay": 1091,
       "type": "vless"
     },
     {
       "name": "SG - zhuhai.uk 08",
-      "delay": 1240,
-      "type": "vless"
-    },
-    {
-      "name": "IN - zhuhai.uk 05",
-      "delay": 1316,
+      "delay": 1383,
       "type": "vless"
     },
     {
       "name": "JP - zhuhai.uk 08",
-      "delay": 1330,
+      "delay": 1570,
       "type": "vless"
     },
     {
-      "name": "DE - zhuhai.uk 02",
-      "delay": 3581,
+      "name": "IN - zhuhai.uk 05",
+      "delay": 1736,
       "type": "vless"
     },
     {
       "name": "DE - zhuhai.uk 01",
-      "delay": 3841,
+      "delay": 4037,
+      "type": "vless"
+    },
+    {
+      "name": "DE - zhuhai.uk 02",
+      "delay": 4051,
       "type": "vless"
     }
   ],
-  "live_count": 25
+  "live_count": 12
 }
