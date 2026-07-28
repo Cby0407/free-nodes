@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-07-27T13:30:31.962Z
+生成时间：2026-07-28T11:30:31.344Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -12,7 +12,7 @@
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 每小时更新免费节点 | #7 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -26,41 +26,41 @@
 | free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| free V2Ray nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free V2Ray nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
 
 ## Google 前排竞品域名
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 32 |
-| youtube.com | 9 |
-| freeclashnode.com | 8 |
+| github.com | 30 |
+| freeclashnode.com | 7 |
+| youtube.com | 7 |
 | freenodes.github.io | 6 |
 | oneclash.cc | 5 |
-| clashgithub.com | 4 |
 | end-gfw.com | 4 |
 | mibei77.com | 4 |
+| proxylist.cc | 4 |
+| v2rayshare.net | 4 |
+| v2rayu.cc | 4 |
+| clashgithub.com | 3 |
 | linux.do | 3 |
-| v2rayshare.net | 3 |
-| b.freev2.net | 2 |
-| ccbaohe.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 163 |
-| v2ray | 163 |
-| 免费节点 | 84 |
-| trojan | 67 |
-| 机场 | 67 |
-| 小火箭 | 46 |
-| 节点订阅 | 43 |
-| shadowrocket | 38 |
-| 每日更新 | 36 |
-| shadowsocks | 24 |
-| 免费订阅 | 19 |
-| mihomo | 16 |
+| clash | 153 |
+| v2ray | 144 |
+| 机场 | 71 |
+| 免费节点 | 69 |
+| trojan | 57 |
+| 小火箭 | 47 |
+| 每日更新 | 40 |
+| 节点订阅 | 39 |
+| shadowrocket | 34 |
+| shadowsocks | 29 |
+| mihomo | 20 |
+| 免费订阅 | 16 |
 
 ## 自动策略
 
