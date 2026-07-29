@@ -130,11 +130,11 @@ const TOPIC_PAGES = [
   },
   {
     slug: "v2ray-nodes",
-    title: "V2Ray 节点",
-    h1: "V2Ray 节点与通用 Base64 订阅",
+    title: "V2Ray 节点订阅",
+    h1: "V2Ray 节点订阅与通用 Base64 链接",
     description:
-      "提供 V2Ray、v2rayN、v2rayNG、NekoBox、Hiddify 等客户端可尝试导入的通用 Base64 免费节点订阅。",
-    keywords: ["V2Ray 节点", "free V2Ray nodes", "V2RayN", "V2rayNG", "NekoBox", "Hiddify"],
+      "提供 V2Ray 节点订阅与通用 Base64 固定链接，供 v2rayN、v2rayNG、NekoBox、Hiddify 等客户端导入和测试。",
+    keywords: ["V2Ray 节点", "V2Ray 节点订阅", "free V2Ray nodes", "V2RayN", "V2rayNG", "NekoBox", "Hiddify"],
     body:
       "通用 Base64 订阅适合 V2Ray 生态客户端。不同客户端对协议支持略有差异，遇到不可用节点时，可以更新订阅或切换到 Clash / Mihomo 配置测试。",
     intent: "寻找 V2Ray、V2RayN、v2rayNG、NekoBox、Hiddify 可尝试导入的免费节点。",
@@ -150,6 +150,7 @@ const TOPIC_PAGES = [
     ],
     faq: [
       ["V2RayN 和 v2rayNG 应该用哪个订阅？", "优先使用 Base64 通用订阅；如果客户端支持 Clash 配置，也可以测试 YAML 订阅。"],
+      ["V2Ray 节点订阅链接在哪里？", "本页提供固定的 Base64 订阅链接；复制后在客户端新增远程订阅，再更新并测速即可。"],
       ["为什么有些 V2Ray 节点显示超时？", "免费节点可能已经失效，或当前网络到该节点线路质量较差，建议刷新订阅并重新测速。"],
     ],
   },
@@ -194,6 +195,13 @@ const TRUST_POINTS = [
     title: "内容质量",
     body: "专题页围绕真实搜索意图补充导入步骤、适用客户端、FAQ 和安全提醒，避免只堆关键词。",
   },
+];
+
+const HOMEPAGE_FAQ = [
+  ["免费节点订阅多久更新一次？", "订阅文件由自动任务每小时更新，固定订阅链接无需频繁更换；导入后仍应先测速和检查连通性。"],
+  ["V2Ray 节点订阅怎么导入？", "复制 Base64 通用订阅地址，在 V2RayN、v2rayNG、NekoBox 或 Hiddify 中新增远程订阅，更新后再测速。"],
+  ["Clash 或 Mihomo 应该用哪个订阅？", "Clash、Mihomo、Clash Verge 和 Mihomo Party 优先使用 YAML 订阅地址；导入后先更新配置并测试节点。"],
+  ["free nodes 是什么？", "free nodes 指公开可用的免费代理节点。本项目提供固定订阅入口，适合客户端学习、临时测试和备用连接，不保证长期稳定性。"],
 ];
 
 const TUTORIAL_GROUPS = [
@@ -431,6 +439,20 @@ function breadcrumbJsonLd(topic) {
   });
 }
 
+function homepageItemListJsonLd() {
+  return jsonLd({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Zhuhai Free Nodes 专题入口",
+    itemListElement: TOPIC_PAGES.map((topic, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: topic.title,
+      url: topicHref(topic),
+    })),
+  });
+}
+
 function listMarkup(items, className = "") {
   return `<ul${className ? ` class="${className}"` : ""}>\n${items
     .map((item) => `      <li>${escapeHtml(item)}</li>`)
@@ -479,12 +501,12 @@ function indexHtml(stats, parts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新</title>
-  <meta name="description" content="Zhuhai Free Nodes 提供每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket、sing-box、NekoBox、Hiddify 等客户端，并整理订阅导入教程。">
+  <title>免费节点订阅（每小时更新）| Clash、Mihomo、V2Ray | Zhuhai Free Nodes</title>
+  <meta name="description" content="免费节点订阅每小时更新：提供 Clash / Mihomo YAML 与 V2Ray Base64 固定链接，适合导入、测速和临时测试。免费节点可用性会变化，请先检查连通性。">
   <meta name="keywords" content="${KEYWORDS.join(", ")}">
   <link rel="canonical" href="${SITE_URL}/">
-  <meta property="og:title" content="Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新">
-  <meta property="og:description" content="每小时自动更新的免费代理节点订阅，提供 Base64 和 Clash / Mihomo YAML 固定入口。">
+  <meta property="og:title" content="免费节点订阅（每小时更新）| Clash、Mihomo、V2Ray | Zhuhai Free Nodes">
+  <meta property="og:description" content="每小时更新的免费节点订阅，提供 Clash / Mihomo YAML 与 V2Ray Base64 固定入口。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE_URL}/">
   <style>${sharedStyles()}</style>
@@ -499,6 +521,8 @@ function indexHtml(stats, parts) {
     dateModified: dateKey(parts),
     keywords: KEYWORDS.join(", "),
   })}
+  ${faqJsonLd({ faq: HOMEPAGE_FAQ })}
+  ${homepageItemListJsonLd()}
 </head>
 <body>
   <main>
@@ -568,9 +592,7 @@ ${listItems(topProtocols, ([protocol, count]) => `          <li><strong>${escape
 
     <h2 id="faq">常见问题</h2>
     <div class="faq-list">
-      <div class="faq-item"><strong>为什么节点会失效？</strong><p>免费节点通常稳定性有限，更新订阅并测速后再使用更稳妥。</p></div>
-      <div class="faq-item"><strong>Clash Verge、Mihomo Party 用哪个？</strong><p>优先使用 Clash / Mihomo 订阅地址。</p></div>
-      <div class="faq-item"><strong>V2RayN、v2rayNG、Shadowrocket 用哪个？</strong><p>可以优先尝试通用 Base64 订阅地址。</p></div>
+${faqMarkup({ faq: HOMEPAGE_FAQ })}
     </div>
 
     <footer>
