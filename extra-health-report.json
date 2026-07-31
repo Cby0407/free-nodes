@@ -1,75 +1,85 @@
 {
-  "checked_at": "2026-07-31T10:10:52Z",
+  "checked_at": "2026-07-31T17:13:57Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 119,
   "live_nodes": [
     {
-      "name": "AU - zhuhai.uk 03",
-      "delay": 541,
-      "type": "socks5"
-    },
-    {
-      "name": "GB - zhuhai.uk 05",
-      "delay": 547,
+      "name": "US - zhuhai.uk 19",
+      "delay": 183,
       "type": "http"
     },
     {
       "name": "FR - zhuhai.uk 01",
-      "delay": 579,
-      "type": "socks5"
-    },
-    {
-      "name": "GB - zhuhai.uk 03",
-      "delay": 606,
-      "type": "http"
-    },
-    {
-      "name": "FR - zhuhai.uk 02",
-      "delay": 692,
-      "type": "socks5"
-    },
-    {
-      "name": "NL - zhuhai.uk 02",
-      "delay": 748,
+      "delay": 753,
       "type": "socks5"
     },
     {
       "name": "DE - zhuhai.uk 07",
-      "delay": 870,
+      "delay": 755,
       "type": "trojan"
     },
     {
-      "name": "SG - zhuhai.uk 04",
-      "delay": 1115,
-      "type": "socks5"
-    },
-    {
-      "name": "KR - zhuhai.uk 02",
-      "delay": 1390,
+      "name": "FR - zhuhai.uk 02",
+      "delay": 787,
       "type": "socks5"
     },
     {
       "name": "KR - zhuhai.uk 07",
-      "delay": 1630,
+      "delay": 813,
       "type": "socks5"
     },
     {
       "name": "KR - zhuhai.uk 01",
-      "delay": 1660,
+      "delay": 815,
       "type": "socks5"
     },
     {
+      "name": "AU - zhuhai.uk 03",
+      "delay": 830,
+      "type": "socks5"
+    },
+    {
+      "name": "GB - zhuhai.uk 04",
+      "delay": 834,
+      "type": "http"
+    },
+    {
+      "name": "GB - zhuhai.uk 05",
+      "delay": 909,
+      "type": "http"
+    },
+    {
+      "name": "NL - zhuhai.uk 04",
+      "delay": 990,
+      "type": "socks5"
+    },
+    {
+      "name": "NL - zhuhai.uk 02",
+      "delay": 1117,
+      "type": "socks5"
+    },
+    {
+      "name": "GB - zhuhai.uk 03",
+      "delay": 1173,
+      "type": "http"
+    },
+    {
       "name": "JP - zhuhai.uk 46",
-      "delay": 2233,
+      "delay": 1488,
       "type": "trojan"
     },
     {
-      "name": "KR - zhuhai.uk 09",
-      "delay": 4773,
+      "name": "KR - zhuhai.uk 02",
+      "delay": 2556,
+      "type": "socks5"
+    },
+    {
+      "name": "IN - zhuhai.uk 02",
+      "delay": 4856,
       "type": "trojan"
     }
   ],
-  "live_count": 13
+  "live_count": 15
 }
