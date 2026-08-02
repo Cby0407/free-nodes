@@ -1,28 +1,14 @@
 proxies:
-- name: KR - zhuhai.uk 01
-  type: socks5
-  server: 43.164.136.189
-  port: 1080
-  udp: true
-- name: FR - zhuhai.uk 01
+- name: FR - zhuhai.uk 02
   type: socks5
   server: 213.199.47.140
   port: 1080
   udp: true
-- name: NL - zhuhai.uk 02
+- name: AU - zhuhai.uk 03
   type: socks5
-  server: 85.17.179.81
+  server: 213.199.47.140
   port: 1080
   udp: true
-  username: M_YOU_D
-  password: Private
-- name: GB - zhuhai.uk 05
-  type: http
-  server: 5c78e09e-thxmo0-tjdj5q-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
 - name: NL - zhuhai.uk 04
   type: socks5
   server: 85.17.179.81
@@ -30,31 +16,16 @@ proxies:
   udp: true
   username: M_YOU_D
   password: Private
-- name: AU - zhuhai.uk 03
+- name: NL - zhuhai.uk 02
+  type: socks5
+  server: 85.17.179.81
+  port: 1080
+  udp: true
+  username: M_YOU_D
+  password: Private
+- name: FR - zhuhai.uk 01
   type: socks5
   server: 213.199.47.140
-  port: 1080
-  udp: true
-- name: GB - zhuhai.uk 03
-  type: http
-  server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
-- name: FR - zhuhai.uk 02
-  type: socks5
-  server: 213.199.47.140
-  port: 1080
-  udp: true
-- name: KR - zhuhai.uk 02
-  type: socks5
-  server: 43.164.136.189
-  port: 1080
-  udp: true
-- name: KR - zhuhai.uk 07
-  type: socks5
-  server: 43.164.136.189
   port: 1080
   udp: true
 - name: DE - zhuhai.uk 07
@@ -65,30 +36,40 @@ proxies:
   udp: true
   sni: de.catxstar.com
   skip-cert-verify: true
-- name: SG - zhuhai.uk 04
+- name: KR - zhuhai.uk 02
   type: socks5
-  server: 140.245.99.105
-  port: 7890
+  server: 43.164.136.189
+  port: 1080
   udp: true
-- name: SG - zhuhai.uk 52
+- name: KR - zhuhai.uk 07
   type: socks5
-  server: 140.245.99.105
-  port: 7890
+  server: 43.164.136.189
+  port: 1080
+  udp: true
+- name: JP - zhuhai.uk 46
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: KR - zhuhai.uk 01
+  type: socks5
+  server: 43.164.136.189
+  port: 1080
   udp: true
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - KR - zhuhai.uk 01
-  - FR - zhuhai.uk 01
-  - NL - zhuhai.uk 02
-  - GB - zhuhai.uk 05
-  - NL - zhuhai.uk 04
-  - AU - zhuhai.uk 03
-  - GB - zhuhai.uk 03
   - FR - zhuhai.uk 02
+  - AU - zhuhai.uk 03
+  - NL - zhuhai.uk 04
+  - NL - zhuhai.uk 02
+  - FR - zhuhai.uk 01
+  - DE - zhuhai.uk 07
   - KR - zhuhai.uk 02
   - KR - zhuhai.uk 07
-  - DE - zhuhai.uk 07
-  - SG - zhuhai.uk 04
-  - SG - zhuhai.uk 52
+  - JP - zhuhai.uk 46
+  - KR - zhuhai.uk 01
