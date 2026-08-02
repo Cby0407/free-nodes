@@ -1,60 +1,50 @@
 {
-  "checked_at": "2026-08-02T15:46:38Z",
+  "checked_at": "2026-08-02T21:14:03Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 119,
   "live_nodes": [
     {
-      "name": "FR - zhuhai.uk 02",
-      "delay": 560,
-      "type": "socks5"
+      "name": "GB - zhuhai.uk 03",
+      "delay": 542,
+      "type": "http"
     },
     {
-      "name": "AU - zhuhai.uk 03",
-      "delay": 591,
+      "name": "GB - zhuhai.uk 05",
+      "delay": 546,
+      "type": "http"
+    },
+    {
+      "name": "NL - zhuhai.uk 02",
+      "delay": 685,
       "type": "socks5"
     },
     {
       "name": "NL - zhuhai.uk 04",
-      "delay": 605,
+      "delay": 722,
       "type": "socks5"
     },
     {
-      "name": "NL - zhuhai.uk 02",
-      "delay": 616,
+      "name": "AU - zhuhai.uk 03",
+      "delay": 777,
+      "type": "socks5"
+    },
+    {
+      "name": "FR - zhuhai.uk 02",
+      "delay": 908,
       "type": "socks5"
     },
     {
       "name": "FR - zhuhai.uk 01",
-      "delay": 706,
+      "delay": 912,
       "type": "socks5"
     },
     {
       "name": "DE - zhuhai.uk 07",
-      "delay": 876,
+      "delay": 1517,
       "type": "trojan"
-    },
-    {
-      "name": "KR - zhuhai.uk 02",
-      "delay": 1818,
-      "type": "socks5"
-    },
-    {
-      "name": "KR - zhuhai.uk 07",
-      "delay": 2173,
-      "type": "socks5"
-    },
-    {
-      "name": "JP - zhuhai.uk 46",
-      "delay": 3505,
-      "type": "trojan"
-    },
-    {
-      "name": "KR - zhuhai.uk 01",
-      "delay": 3605,
-      "type": "socks5"
     }
   ],
-  "live_count": 10
+  "live_count": 8
 }
