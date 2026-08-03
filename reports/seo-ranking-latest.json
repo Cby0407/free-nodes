@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T13:26:00.953Z",
+  "generatedAt": "2026-08-03T13:26:20.917Z",
   "siteUrl": "https://nodes.zhuhai.uk",
   "repository": "zhuhaiuk/free-nodes",
   "google": {
@@ -10,387 +10,75 @@
   "googleRanks": [
     {
       "keyword": "免费节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Pawdroid/Free-servers - 免费梯子、免费ss/v2ray/trojan节点",
-          "link": "https://github.com/Pawdroid/Free-servers"
-        },
-        {
-          "position": 2,
-          "title": "米贝分享-每日分享好用的免费科学上网节点",
-          "link": "https://www.mibei77.com/"
-        },
-        {
-          "position": 3,
-          "title": "免费翻墙软件- 完全免费VPN代理服务| 大翻墙运动",
-          "link": "https://end-gfw.com/"
-        },
-        {
-          "position": 4,
-          "title": "freenodes | 免费梯子🪜 免费科学上网🛜免费翻墙🧱免费订阅 ...",
-          "link": "https://freenodes.github.io/freenodes/"
-        },
-        {
-          "position": 5,
-          "title": "v2rayShare - SSR/V2ray/Clash/Mihomo免费节点",
-          "link": "https://v2rayshare.net/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "免费代理节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Pawdroid/Free-servers - 免费梯子、免费ss/v2ray/trojan节点",
-          "link": "https://github.com/Pawdroid/Free-servers"
-        },
-        {
-          "position": 2,
-          "title": "freenodes | 免费梯子🪜 免费科学上网🛜免费翻墙🧱免费订阅 ...",
-          "link": "https://freenodes.github.io/freenodes/"
-        },
-        {
-          "position": 3,
-          "title": "Proxy List 免费节点订阅｜每日更新· 高速稳定代理节点",
-          "link": "https://proxylist.cc/"
-        },
-        {
-          "position": 4,
-          "title": "免费翻墙软件- 完全免费VPN代理服务| 大翻墙运动",
-          "link": "https://end-gfw.com/"
-        },
-        {
-          "position": 5,
-          "title": "免费代理IP [实时更新IP代理] 支持免费API接口",
-          "link": "https://www.zdaye.com/free/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "免费节点订阅",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Pawdroid/Free-servers - 免费梯子、免费ss/v2ray/trojan节点",
-          "link": "https://github.com/Pawdroid/Free-servers"
-        },
-        {
-          "position": 2,
-          "title": "免费clash节点|科学上网- 免费公益SSR/V2ray/Shadowrocket ...",
-          "link": "https://clashgithub.com/"
-        },
-        {
-          "position": 3,
-          "title": "FreeClashNode每天更新| 免费分享SSR节点/V2ray节点/Clash ...",
-          "link": "https://www.freeclashnode.com/"
-        },
-        {
-          "position": 4,
-          "title": "freenodes | 免费梯子🪜 免费科学上网🛜免费翻墙🧱免费订阅 ...",
-          "link": "https://freenodes.github.io/freenodes/"
-        },
-        {
-          "position": 5,
-          "title": "oneClash | 每日精选SSR/V2ray/Clash免费节点每天更新",
-          "link": "https://oneclash.cc/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "每小时更新免费节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Pawdroid/Free-servers - 免费梯子、免费ss/v2ray/trojan节点",
-          "link": "https://github.com/Pawdroid/Free-servers"
-        },
-        {
-          "position": 2,
-          "title": "freenodes | 免费梯子🪜 免费科学上网🛜免费翻墙🧱免费订阅 ...",
-          "link": "https://freenodes.github.io/freenodes/"
-        },
-        {
-          "position": 3,
-          "title": "玩转节点- 每日更新Clash/SSR/V2ray免费节点",
-          "link": "https://wanzhuanmi.com/"
-        },
-        {
-          "position": 4,
-          "title": "FreeClashNode每天更新| 免费分享SSR节点/V2ray节点/Clash ...",
-          "link": "https://www.freeclashnode.com/"
-        },
-        {
-          "position": 5,
-          "title": "oneClash | 每日精选SSR/V2ray/Clash免费节点每天更新",
-          "link": "https://oneclash.cc/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E6%AF%8F%E5%B0%8F%E6%97%B6%E6%9B%B4%E6%96%B0%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "Clash 节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "clash翻墙、clash订阅链接- 免费节点",
-          "link": "https://github.com/free-nodes/clashfree"
-        },
-        {
-          "position": 2,
-          "title": "Clash节点| 每天更新SSR/V2ray/Clash免费节点订阅",
-          "link": "https://clashnode.cc/"
-        },
-        {
-          "position": 3,
-          "title": "免费clash节点|科学上网- 免费公益SSR/V2ray/Shadowrocket ...",
-          "link": "https://clashgithub.com/"
-        },
-        {
-          "position": 4,
-          "title": "oneClash | 每日精选SSR/V2ray/Clash免费节点每天更新",
-          "link": "https://oneclash.cc/"
-        },
-        {
-          "position": 5,
-          "title": "BinGo Clash 免费机场订阅| 2026最新V2ray/Clash节点推荐",
-          "link": "https://bingoclash.github.io/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Clash+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "Mihomo 节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "mihomo (Clash Meta) 懒人配置",
-          "link": "https://gist.github.com/liuran001/5ca84f7def53c70b554d3f765ff86a33"
-        },
-        {
-          "position": 2,
-          "title": "Mihomo Party | 每日更新免费Clash/V2Ray/SSR节点推荐",
-          "link": "https://mihomoparty.github.io/"
-        },
-        {
-          "position": 3,
-          "title": "代理集合配置 - 虚空终端Docs",
-          "link": "https://wiki.metacubex.one/config/proxy-providers/"
-        },
-        {
-          "position": 4,
-          "title": "整活！使用“mihomo-party”混合使用多个订阅节点，节点自动 ...",
-          "link": "https://linux.do/t/topic/214118"
-        },
-        {
-          "position": 5,
-          "title": "Clash Party 新手教程",
-          "link": "https://mihomoparty.com/tutorial/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Mihomo+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "V2Ray 节点",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "free18/v2ray: 每日分享免费节点、免费机场、付费机场、电报 ...",
-          "link": "https://github.com/free18/v2ray"
-        },
-        {
-          "position": 2,
-          "title": "v2rayShare - SSR/V2ray/Clash/Mihomo免费节点",
-          "link": "https://v2rayshare.net/"
-        },
-        {
-          "position": 3,
-          "title": "FreeClashNode每天更新| 免费分享SSR节点/V2ray节点/Clash ...",
-          "link": "https://www.freeclashnode.com/"
-        },
-        {
-          "position": 4,
-          "title": "SS节点、免费V2ray节点|高速V2ray机场翻墙服务-V2free机场",
-          "link": "https://v2free.org/"
-        },
-        {
-          "position": 5,
-          "title": "V2RayU 免费节点订阅｜每日更新· 高速稳定V2Ray 配置",
-          "link": "https://v2rayu.cc/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=V2Ray+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "Shadowrocket 共享账号",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "dongyubin/Free-AppleId-Serve: 2026年7月更新🚀苹果美区 ...",
-          "link": "https://github.com/dongyubin/Free-AppleId-Serve"
-        },
-        {
-          "position": 2,
-          "title": "2026苹果ID免费共享，免费小火箭账号分享",
-          "link": "https://ccbaohe.com/appleID/"
-        },
-        {
-          "position": 3,
-          "title": "免费节点小火箭shadowrocket 共享账号v2rayN clash",
-          "link": "https://www.idusr.com/"
-        },
-        {
-          "position": 4,
-          "title": "【网站自荐】美区Apple ID 和小火箭共享账号的分享网站#56",
-          "link": "https://github.com/XiaomingX/1000-chinese-independent-developer-plus/issues/56"
-        },
-        {
-          "position": 5,
-          "title": "小火箭共享账号",
-          "link": "https://id.bocchi.vip/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Shadowrocket+%E5%85%B1%E4%BA%AB%E8%B4%A6%E5%8F%B7&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "free nodes",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "free-nodes",
-          "link": "https://github.com/free-nodes"
-        },
-        {
-          "position": 2,
-          "title": "HakurouKen/free-node",
-          "link": "https://github.com/HakurouKen/free-node"
-        },
-        {
-          "position": 3,
-          "title": "GetAFreeNode-Get a v2ray node for free on this page!",
-          "link": "https://getafreenode.com/"
-        },
-        {
-          "position": 4,
-          "title": "PublicNode",
-          "link": "https://publicnode.com/"
-        },
-        {
-          "position": 5,
-          "title": "Mark and Clear Free Nodes",
-          "link": "https://help.altair.com/hwdesktop/hwx/topics/pre_processing/geometry/nodes_mark_free_t.htm"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "free proxy nodes",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Free Proxy List — 1000+ HTTP/SOCKS5 IPs, Updated Live",
-          "link": "https://geonode.com/zh/free-proxy-list"
-        },
-        {
-          "position": 2,
-          "title": "iplocate/free-proxy-list: ⚡️ Free Verified HTTP, SOCKS5 ...",
-          "link": "https://github.com/iplocate/free-proxy-list"
-        },
-        {
-          "position": 3,
-          "title": "Free Proxy List — Updated Every Minute - ProxyScrape",
-          "link": "https://proxyscrape.com/free-proxy-list"
-        },
-        {
-          "position": 4,
-          "title": "Free Proxy List | SOCKS5 + HTTPS Proxy 1000+ IPs",
-          "link": "https://nodemaven.com/free-proxy-list/"
-        },
-        {
-          "position": 5,
-          "title": "proxifly/free-proxy-list: 🚀 Free HTTP, SOCKS4, & SOCKS5 ...",
-          "link": "https://github.com/proxifly/free-proxy-list"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+proxy+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "free Clash nodes",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Activity · free-nodes/clashfree",
-          "link": "https://github.com/free-nodes/clashfree/activity"
-        },
-        {
-          "position": 2,
-          "title": "FreeClashNode每天更新| 免费分享SSR节点/V2ray节点/Clash ...",
-          "link": "https://www.freeclashnode.com/"
-        },
-        {
-          "position": 3,
-          "title": "clashfree download",
-          "link": "https://sourceforge.net/projects/clashfree.mirror/"
-        },
-        {
-          "position": 4,
-          "title": "itxve/fetch-clash-node",
-          "link": "https://github.com/itxve/fetch-clash-node"
-        },
-        {
-          "position": 5,
-          "title": "免费节点",
-          "link": "https://oneclash.cc/freenode"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+Clash+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     },
     {
       "keyword": "free V2Ray nodes",
-      "status": "ok",
-      "target": null,
-      "topResults": [
-        {
-          "position": 1,
-          "title": "Free V2Ray Configs & Public Server List (SS, SSR, Trojan, ...",
-          "link": "https://github.com/ebrasha/free-v2ray-public-list"
-        },
-        {
-          "position": 2,
-          "title": "V2Nodes - Free V2Ray Config List",
-          "link": "https://www.v2nodes.com/"
-        },
-        {
-          "position": 3,
-          "title": "barry-far/V2ray-Config",
-          "link": "https://github.com/barry-far/v2ray-config"
-        },
-        {
-          "position": 4,
-          "title": "Free V2Ray List",
-          "link": "https://openproxylist.com/v2ray/"
-        },
-        {
-          "position": 5,
-          "title": "V2Rayfree download",
-          "link": "https://sourceforge.net/projects/v2rayfree.mirror/"
-        }
-      ]
+      "status": "error",
+      "reason": "429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+V2Ray+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5",
+      "target": null
     }
   ],
   "repositories": [
@@ -398,49 +86,49 @@
       "fullName": "zhuhaiuk/free-nodes",
       "url": "https://github.com/zhuhaiuk/free-nodes",
       "description": "每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端测试使用。",
-      "stars": 81,
-      "forks": 7,
+      "stars": 106,
+      "forks": 9,
       "watchers": 1,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-07-27T12:43:44Z",
-      "updatedAt": "2026-07-27T13:08:08Z"
+      "pushedAt": "2026-08-03T12:42:47Z",
+      "updatedAt": "2026-08-03T12:43:58Z"
     },
     {
       "fullName": "snakem982/proxypool",
       "url": "https://github.com/snakem982/proxypool",
       "description": "Free Proxies，Free Nodes，免费节点，白嫖节点，免费vpn，免费v2ray，免费订阅，免费clash，Free VPN，Free v2ray，Free Sub，Free Clash",
-      "stars": 1936,
-      "forks": 139,
+      "stars": 1961,
+      "forks": 143,
       "watchers": 37,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-07-27T10:15:04Z",
-      "updatedAt": "2026-07-27T12:00:14Z"
+      "pushedAt": "2026-08-03T10:15:05Z",
+      "updatedAt": "2026-08-03T10:15:48Z"
     },
     {
       "fullName": "Pawdroid/Free-servers",
       "url": "https://github.com/Pawdroid/Free-servers",
       "description": "🚀 免费订阅地址，🚀 免费节点，🚀 6小时更新一次，共享节点，节点质量高可用，完全免费。免费clash订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, 🚀 Updated every 6 hours, shared node, high-quality node availability, completely free. Free clash subscription address, free ss/v2ray/trojan node.",
-      "stars": 18399,
-      "forks": 1197,
-      "watchers": 284,
+      "stars": 18487,
+      "forks": 1200,
+      "watchers": 285,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-07-27T13:00:35Z",
-      "updatedAt": "2026-07-27T13:02:22Z"
+      "pushedAt": "2026-08-03T13:00:39Z",
+      "updatedAt": "2026-08-03T13:02:21Z"
     },
     {
       "fullName": "shuaidaoya/FreeNodes",
       "url": "https://github.com/shuaidaoya/FreeNodes",
       "description": "因调整需要，项目暂时停更1-2个月，休整完毕后会如期回归，感谢理解与等待。过渡节点订阅已更新至下方链接！！！每4小时自动更新🤖，支持v2ray、clash等各种代理软件，利用SubsCheck-Win-GUI自动从节点池爬取免费节点分享",
       "stars": 2294,
-      "forks": 367,
+      "forks": 366,
       "watchers": 19,
       "openIssues": 7,
       "defaultBranch": "main",
       "pushedAt": "2026-03-23T17:39:24Z",
-      "updatedAt": "2026-07-27T08:51:48Z"
+      "updatedAt": "2026-08-01T08:08:10Z"
     },
     {
       "fullName": "littlebais/free-proxy-nodes",
@@ -458,13 +146,13 @@
       "fullName": "freevpnssr/freevpnssr.github.io",
       "url": "https://github.com/freevpnssr/freevpnssr.github.io",
       "description": "🚀 免费订阅地址，🚀 免费节点，共享节点，节点质量高可用，完全免费。免费ClashXW订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, shared node, high-quality node availability, completely free. Free ClashXW subscription address, free ss/v2ray/trojan node.",
-      "stars": 7,
+      "stars": 9,
       "forks": 0,
       "watchers": 0,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-07-21T07:06:05Z",
-      "updatedAt": "2026-07-25T11:36:34Z"
+      "pushedAt": "2026-07-28T04:23:29Z",
+      "updatedAt": "2026-08-02T11:12:11Z"
     }
   ]
 }
