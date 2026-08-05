@@ -130,14 +130,14 @@ const TOPIC_PAGES = [
   },
   {
     slug: "v2ray-nodes",
-    title: "V2Ray 节点订阅",
-    h1: "V2Ray 节点订阅与通用 Base64 链接",
+    title: "免费 V2Ray 节点订阅链接",
+    h1: "免费 V2Ray 节点订阅链接与 Base64 导入",
     description:
-      "提供 V2Ray 节点订阅与通用 Base64 固定链接，供 v2rayN、v2rayNG、NekoBox、Hiddify 等客户端导入和测试。",
-    keywords: ["V2Ray 节点", "V2Ray 节点订阅", "free V2Ray nodes", "V2RayN", "V2rayNG", "NekoBox", "Hiddify"],
+      "免费 V2Ray 节点订阅链接：提供通用 Base64 固定入口，供 v2rayN、v2rayNG、NekoBox、Hiddify 等客户端导入、更新和测试。",
+    keywords: ["免费 V2Ray 节点", "免费 V2Ray 订阅链接", "V2Ray 节点订阅", "V2Ray 订阅链接 免费", "free V2Ray nodes", "V2RayN", "V2rayNG", "NekoBox", "Hiddify"],
     body:
-      "通用 Base64 订阅适合 V2Ray 生态客户端。不同客户端对协议支持略有差异，遇到不可用节点时，可以更新订阅或切换到 Clash / Mihomo 配置测试。",
-    intent: "寻找 V2Ray、V2RayN、v2rayNG、NekoBox、Hiddify 可尝试导入的免费节点。",
+      "免费 V2Ray 节点订阅链接通常以 Base64 格式提供，适合 V2Ray 生态客户端直接添加为远程订阅。复制固定链接、在客户端更新订阅后再测速；不同客户端对协议支持略有差异，遇到不可用节点时可更新订阅或切换到 Clash / Mihomo 配置测试。",
+    intent: "寻找可复制的免费 V2Ray 订阅链接，并在 V2RayN、v2rayNG、NekoBox 或 Hiddify 中完成导入和测试。",
     bestFor: ["V2RayN", "v2rayNG", "NekoBox", "Hiddify", "通用 Base64 订阅测试"],
     importSteps: [
       "复制 Base64 通用订阅地址。",
@@ -149,6 +149,7 @@ const TOPIC_PAGES = [
       "如果订阅为空或导入失败，可以等待下一轮更新后再试。",
     ],
     faq: [
+      ["免费 V2Ray 订阅链接怎么用？", "复制本页的 Base64 通用订阅地址，在客户端新增远程订阅并更新；导入完成后先测速和检查连通性。"],
       ["V2RayN 和 v2rayNG 应该用哪个订阅？", "优先使用 Base64 通用订阅；如果客户端支持 Clash 配置，也可以测试 YAML 订阅。"],
       ["V2Ray 节点订阅链接在哪里？", "本页提供固定的 Base64 订阅链接；复制后在客户端新增远程订阅，再更新并测速即可。"],
       ["为什么有些 V2Ray 节点显示超时？", "免费节点可能已经失效，或当前网络到该节点线路质量较差，建议刷新订阅并重新测速。"],
@@ -812,7 +813,12 @@ async function sitemapXml(parts) {
     { loc: `${SITE_URL}/seo-insights.html`, freq: "daily", priority: "0.8" },
     { loc: `${SITE_URL}/competitors.html`, freq: "weekly", priority: "0.7" },
     ...TOPIC_PAGES.map((topic) => ({ loc: topicHref(topic), freq: "daily", priority: "0.9" })),
-    ...archives.map((file) => ({ loc: `${SITE_URL}/${file}`, freq: "daily", priority: "0.8" })),
+    ...archives.map((file) => ({
+      loc: `${SITE_URL}/${file}`,
+      lastmod: file.match(/\/(\d{4}-\d{2}-\d{2})-free-nodes\.html$/)?.[1],
+      freq: "daily",
+      priority: "0.8",
+    })),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -821,7 +827,7 @@ ${urls
   .map(
     (url) => `  <url>
     <loc>${url.loc}</loc>
-    <lastmod>${dateKey(parts)}</lastmod>
+    <lastmod>${url.lastmod || dateKey(parts)}</lastmod>
     <changefreq>${url.freq}</changefreq>
     <priority>${url.priority}</priority>
   </url>`

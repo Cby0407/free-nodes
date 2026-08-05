@@ -38,7 +38,7 @@
 - 免费节点订阅：[https://nodes.zhuhai.uk/topics/free-nodes.html](https://nodes.zhuhai.uk/topics/free-nodes.html)
 - 免费代理节点：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
 - Clash / Mihomo 节点：[https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html](https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html)
-- V2Ray 节点订阅：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
+- 免费 V2Ray 节点订阅链接：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
 - Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
 
 这些页面用于帮助搜索引擎和 AI 摘要系统理解本仓库主题、更新时间、固定订阅入口、教程入口和竞品差异化。
