@@ -200,6 +200,7 @@ const TRUST_POINTS = [
 
 const HOMEPAGE_FAQ = [
   ["免费节点订阅多久更新一次？", "订阅文件由自动任务每小时更新，固定订阅链接无需频繁更换；导入后仍应先测速和检查连通性。"],
+  ["V2Ray 和 Clash 订阅链接在哪里？", "首页提供 V2Ray 生态客户端可用的 Base64 通用订阅链接，以及 Clash / Mihomo 可用的 YAML 订阅链接；复制后在客户端新增远程订阅并更新。"],
   ["V2Ray 节点订阅怎么导入？", "复制 Base64 通用订阅地址，在 V2RayN、v2rayNG、NekoBox 或 Hiddify 中新增远程订阅，更新后再测速。"],
   ["Clash 或 Mihomo 应该用哪个订阅？", "Clash、Mihomo、Clash Verge 和 Mihomo Party 优先使用 YAML 订阅地址；导入后先更新配置并测试节点。"],
   ["free nodes 是什么？", "free nodes 指公开可用的免费代理节点。本项目提供固定订阅入口，适合客户端学习、临时测试和备用连接，不保证长期稳定性。"],
@@ -502,12 +503,12 @@ function indexHtml(stats, parts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>免费节点订阅（每小时更新）| Clash、Mihomo、V2Ray | Zhuhai Free Nodes</title>
-  <meta name="description" content="免费节点订阅每小时更新：提供 Clash / Mihomo YAML 与 V2Ray Base64 固定链接，适合导入、测速和临时测试。免费节点可用性会变化，请先检查连通性。">
+  <title>免费节点订阅链接（每小时更新）| V2Ray、Clash、Mihomo | Zhuhai Free Nodes</title>
+  <meta name="description" content="免费节点订阅链接每小时更新：提供 V2Ray Base64 与 Clash / Mihomo YAML 固定入口，适合导入、更新、测速和临时测试。请先检查连通性。">
   <meta name="keywords" content="${KEYWORDS.join(", ")}">
   <link rel="canonical" href="${SITE_URL}/">
-  <meta property="og:title" content="免费节点订阅（每小时更新）| Clash、Mihomo、V2Ray | Zhuhai Free Nodes">
-  <meta property="og:description" content="每小时更新的免费节点订阅，提供 Clash / Mihomo YAML 与 V2Ray Base64 固定入口。">
+  <meta property="og:title" content="免费节点订阅链接（每小时更新）| V2Ray、Clash、Mihomo | Zhuhai Free Nodes">
+  <meta property="og:description" content="每小时更新的免费节点订阅链接，提供 V2Ray Base64 与 Clash / Mihomo YAML 固定入口。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE_URL}/">
   <style>${sharedStyles()}</style>
@@ -528,11 +529,11 @@ function indexHtml(stats, parts) {
 <body>
   <main>
     <header>
-      <h1>Zhuhai Free Nodes 免费节点订阅</h1>
-      <p>每小时自动更新，提供通用 Base64 与 Clash / Mihomo 配置，适合 V2RayN、V2rayNG、Shadowrocket、NekoBox、Hiddify、sing-box 等客户端测试使用。</p>
+      <h1>Zhuhai Free Nodes 免费节点订阅链接</h1>
+      <p>每小时自动更新，提供 V2Ray 通用 Base64 与 Clash / Mihomo YAML 订阅链接，适合 V2RayN、V2rayNG、Shadowrocket、NekoBox、Hiddify、sing-box 等客户端导入和测试。</p>
       <div class="actions">
-        <a class="button" href="#base64">Base64 订阅</a>
-        <a class="button secondary" href="#clash">Clash / Mihomo 配置</a>
+        <a class="button" href="#base64">V2Ray Base64 订阅</a>
+        <a class="button secondary" href="#clash">Clash / Mihomo YAML</a>
         <a class="button secondary" href="#topics">关键词专题</a>
         <a class="button secondary" href="#tutorials">使用教程</a>
       </div>
@@ -546,10 +547,10 @@ function indexHtml(stats, parts) {
 
     <p>今日页面生成：${label}。订阅文件保持自动更新，免费节点稳定性会随地区和运营商变化，建议导入后先测试延迟和连通性。</p>
 
-    <h2 id="base64">通用 Base64 订阅</h2>
+    <h2 id="base64">V2Ray 通用 Base64 订阅链接</h2>
     <pre>${RAW_BASE}/nodes.txt</pre>
 
-    <h2 id="clash">Clash / Mihomo 订阅</h2>
+    <h2 id="clash">Clash / Mihomo YAML 订阅链接</h2>
     <pre>${RAW_BASE}/clash_config.yaml</pre>
 
     <h2 id="topics">关键词专题</h2>
@@ -762,9 +763,10 @@ function archiveHtml(stats, parts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${label}免费节点订阅 - Clash / V2Ray / Mihomo 每小时更新</title>
+  <title>${label}免费节点订阅快照 - Zhuhai Free Nodes</title>
   <meta name="description" content="${label} Zhuhai Free Nodes 免费节点订阅快照，包含 Clash、Mihomo、V2Ray、Shadowrocket 等客户端可用的订阅入口。">
-  <link rel="canonical" href="${SITE_URL}/${file}">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="${SITE_URL}/">
   <style>${sharedStyles()}</style>
 </head>
 <body>
@@ -797,28 +799,11 @@ function archiveHtml(stats, parts) {
 }
 
 async function sitemapXml(parts) {
-  let archives = [];
-  try {
-    archives = (await readdir("archive"))
-      .filter((file) => file.endsWith(".html"))
-      .map((file) => `archive/${file}`)
-      .sort()
-      .reverse();
-  } catch {
-    archives = [];
-  }
-
   const urls = [
     { loc: `${SITE_URL}/`, freq: "hourly", priority: "1.0" },
     { loc: `${SITE_URL}/seo-insights.html`, freq: "daily", priority: "0.8" },
     { loc: `${SITE_URL}/competitors.html`, freq: "weekly", priority: "0.7" },
     ...TOPIC_PAGES.map((topic) => ({ loc: topicHref(topic), freq: "daily", priority: "0.9" })),
-    ...archives.map((file) => ({
-      loc: `${SITE_URL}/${file}`,
-      lastmod: file.match(/\/(\d{4}-\d{2}-\d{2})-free-nodes\.html$/)?.[1],
-      freq: "daily",
-      priority: "0.8",
-    })),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -835,6 +820,25 @@ ${urls
   .join("\n")}
 </urlset>
 `;
+}
+
+async function deindexArchiveSnapshots() {
+  let files = [];
+  try {
+    files = (await readdir("archive")).filter((file) => file.endsWith(".html"));
+  } catch {
+    return;
+  }
+  await Promise.all(
+    files.map(async (file) => {
+      const target = path.join("archive", file);
+      const html = await readFile(target, "utf8");
+      const updated = html
+        .replace(/<meta name="robots" content="noindex,follow">\n\s*/g, "")
+        .replace(/<link rel="canonical" href="[^"]+">/, `<meta name="robots" content="noindex,follow">\n  <link rel="canonical" href="${SITE_URL}/">`);
+      if (updated !== html) await writeFile(target, updated);
+    })
+  );
 }
 
 function robotsTxt() {
@@ -934,6 +938,7 @@ for (const topic of TOPIC_PAGES) {
 }
 await writeFile("competitors.html", competitorsHtml(parts));
 await writeFile(todayArchive, archiveHtml(stats, parts));
+await deindexArchiveSnapshots();
 await writeFile("sitemap.xml", await sitemapXml(parts));
 await writeFile("robots.txt", robotsTxt());
 await writeFile("llms.txt", llmsTxt(stats, parts));
