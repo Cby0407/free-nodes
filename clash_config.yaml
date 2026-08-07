@@ -228,20 +228,91 @@ proxies:
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: hht.hhlldjc.kdns.fr
+- name: US - zhuhai.uk 01
+  type: ss
+  server: 98.89.48.191
   port: 443
-  uuid: a4f61bab-947b-4451-b289-2e09962b9c9e
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
-  network: ws
+- name: TW - zhuhai.uk 02
+  type: ss
+  server: 13.114.17.103
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: JP - zhuhai.uk 02
+  type: ss
+  server: 51.21.130.209
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: KR - zhuhai.uk 01
+  type: ss
+  server: 13.61.189.139
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: JP - zhuhai.uk 01
+  type: ss
+  server: 13.50.4.72
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: DE - zhuhai.uk 04
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  udp: true
+  sni: de.catxstar.com
+  skip-cert-verify: true
+- name: GB - zhuhai.uk 04
+  type: http
+  server: 73721193-tcxds0-tvgkxc-hrtf.uk.oshuawei.com
+  port: 443
+  username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   tls: true
-  servername: hht.hhlldjc.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/fdip=turn://167.235.139.220:3479?global=0&ed=2560"
-    headers:
-      Host: hht.hhlldjc.kdns.fr
+- name: GB - zhuhai.uk 07
+  type: http
+  server: 03a71324-t9zts0-tiuovf-v3c2.uk.oshuawei.com
+  port: 443
+  username: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  tls: true
+- name: GB - zhuhai.uk 05
+  type: http
+  server: b7342ec0-t9zts0-tnkuks-wujn.uk.oshuawei.com
+  port: 443
+  username: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+  password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+  tls: true
+- name: GB - zhuhai.uk 06
+  type: http
+  server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
+  port: 443
+  username: a95e9198-0671-11f0-9426-f23c932f2c32
+  password: a95e9198-0671-11f0-9426-f23c932f2c32
+  tls: true
+- name: HK - zhuhai.uk 01
+  type: socks5
+  server: 47.243.98.8
+  port: 1080
+  udp: true
+  username: '888'
+  password: '888'
+- name: TW - zhuhai.uk 03
+  type: socks5
+  server: 106.107.236.110
+  port: 1080
+  udp: true
+  username: '111'
+  password: '111'
 proxy-groups:
 - name: 选择出口
   type: select
@@ -278,7 +349,18 @@ proxy-groups:
   - AT - zhuhai.uk
   - US - zhuhai.uk 07
   - US - zhuhai.uk 08
-  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 01
+  - TW - zhuhai.uk 02
+  - JP - zhuhai.uk 02
+  - KR - zhuhai.uk 01
+  - JP - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - GB - zhuhai.uk 04
+  - GB - zhuhai.uk 07
+  - GB - zhuhai.uk 05
+  - GB - zhuhai.uk 06
+  - HK - zhuhai.uk 01
+  - TW - zhuhai.uk 03
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
