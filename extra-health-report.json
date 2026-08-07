@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-07T09:41:03Z",
+  "checked_at": "2026-08-07T15:14:29Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
@@ -7,69 +7,54 @@
   "live_nodes": [
     {
       "name": "US - zhuhai.uk 01",
-      "delay": 16,
-      "type": "ss"
-    },
-    {
-      "name": "KR - zhuhai.uk 01",
-      "delay": 314,
-      "type": "ss"
-    },
-    {
-      "name": "JP - zhuhai.uk 02",
-      "delay": 314,
+      "delay": 284,
       "type": "ss"
     },
     {
       "name": "JP - zhuhai.uk 01",
-      "delay": 319,
+      "delay": 475,
       "type": "ss"
     },
     {
-      "name": "TW - zhuhai.uk 02",
-      "delay": 484,
+      "name": "KR - zhuhai.uk 01",
+      "delay": 477,
       "type": "ss"
     },
     {
-      "name": "GB - zhuhai.uk 06",
-      "delay": 486,
+      "name": "GB - zhuhai.uk 07",
+      "delay": 669,
       "type": "http"
     },
     {
       "name": "GB - zhuhai.uk 04",
-      "delay": 492,
+      "delay": 710,
       "type": "http"
     },
     {
-      "name": "GB - zhuhai.uk 07",
-      "delay": 496,
+      "name": "GB - zhuhai.uk 06",
+      "delay": 718,
       "type": "http"
-    },
-    {
-      "name": "TW - zhuhai.uk 01",
-      "delay": 621,
-      "type": "ss"
     },
     {
       "name": "DE - zhuhai.uk 04",
-      "delay": 1920,
+      "delay": 1093,
       "type": "trojan"
     },
     {
-      "name": "JP - zhuhai.uk 05",
-      "delay": 4616,
+      "name": "JP - zhuhai.uk 11",
+      "delay": 1963,
       "type": "trojan"
     },
     {
       "name": "JP - zhuhai.uk 04",
-      "delay": 4642,
+      "delay": 2799,
       "type": "trojan"
     },
     {
-      "name": "TW - zhuhai.uk 03",
-      "delay": 4976,
-      "type": "socks5"
+      "name": "JP - zhuhai.uk 05",
+      "delay": 2854,
+      "type": "trojan"
     }
   ],
-  "live_count": 13
+  "live_count": 10
 }
