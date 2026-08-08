@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-07T20:10:21Z",
+  "checked_at": "2026-08-08T04:32:24Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
@@ -7,59 +7,39 @@
   "live_nodes": [
     {
       "name": "US - zhuhai.uk 01",
-      "delay": 319,
+      "delay": 84,
       "type": "ss"
     },
     {
-      "name": "TW - zhuhai.uk 02",
-      "delay": 335,
+      "name": "KR - zhuhai.uk 01",
+      "delay": 385,
+      "type": "ss"
+    },
+    {
+      "name": "JP - zhuhai.uk 01",
+      "delay": 386,
       "type": "ss"
     },
     {
       "name": "JP - zhuhai.uk 02",
-      "delay": 505,
-      "type": "ss"
-    },
-    {
-      "name": "GB - zhuhai.uk 06",
-      "delay": 716,
-      "type": "http"
-    },
-    {
-      "name": "GB - zhuhai.uk 07",
-      "delay": 736,
-      "type": "http"
-    },
-    {
-      "name": "JP - zhuhai.uk 01",
-      "delay": 806,
+      "delay": 396,
       "type": "ss"
     },
     {
       "name": "GB - zhuhai.uk 04",
-      "delay": 842,
+      "delay": 626,
       "type": "http"
     },
     {
-      "name": "JP - zhuhai.uk 04",
-      "delay": 1561,
-      "type": "trojan"
-    },
-    {
-      "name": "JP - zhuhai.uk 05",
-      "delay": 1882,
-      "type": "trojan"
-    },
-    {
-      "name": "DE - zhuhai.uk 04",
-      "delay": 2216,
-      "type": "trojan"
+      "name": "GB - zhuhai.uk 06",
+      "delay": 658,
+      "type": "http"
     },
     {
       "name": "JP - zhuhai.uk 11",
-      "delay": 3612,
+      "delay": 870,
       "type": "trojan"
     }
   ],
-  "live_count": 11
+  "live_count": 7
 }
