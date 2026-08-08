@@ -1,7 +1,7 @@
 proxies:
-- name: JP - zhuhai.uk 01
+- name: JP - zhuhai.uk 02
   type: ss
-  server: 13.50.4.72
+  server: 51.21.130.209
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -13,6 +13,13 @@ proxies:
   username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   tls: true
+- name: JP - zhuhai.uk 01
+  type: ss
+  server: 13.50.4.72
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: GB - zhuhai.uk 06
   type: http
   server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
@@ -20,6 +27,13 @@ proxies:
   username: a95e9198-0671-11f0-9426-f23c932f2c32
   password: a95e9198-0671-11f0-9426-f23c932f2c32
   tls: true
+- name: US - zhuhai.uk 01
+  type: ss
+  server: 98.89.48.191
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: DE - zhuhai.uk 04
   type: trojan
   server: hkdcrtc-e.catcat321.com
@@ -28,19 +42,22 @@ proxies:
   udp: true
   sni: de.catxstar.com
   skip-cert-verify: true
-- name: US - zhuhai.uk 01
-  type: ss
-  server: 98.89.48.191
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: JP - zhuhai.uk 11
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 01
+  - JP - zhuhai.uk 02
   - GB - zhuhai.uk 04
+  - JP - zhuhai.uk 01
   - GB - zhuhai.uk 06
-  - DE - zhuhai.uk 04
   - US - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - JP - zhuhai.uk 11
