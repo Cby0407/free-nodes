@@ -1,40 +1,45 @@
 {
-  "checked_at": "2026-08-09T02:27:41Z",
+  "checked_at": "2026-08-09T07:15:07Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 96,
   "live_nodes": [
     {
-      "name": "TW - zhuhai.uk 02",
-      "delay": 370,
-      "type": "ss"
-    },
-    {
       "name": "JP - zhuhai.uk 02",
-      "delay": 432,
+      "delay": 378,
       "type": "ss"
     },
     {
       "name": "JP - zhuhai.uk 01",
-      "delay": 443,
+      "delay": 508,
+      "type": "ss"
+    },
+    {
+      "name": "TW - zhuhai.uk 02",
+      "delay": 516,
       "type": "ss"
     },
     {
       "name": "GB - zhuhai.uk 04",
-      "delay": 702,
+      "delay": 609,
       "type": "http"
     },
     {
       "name": "GB - zhuhai.uk 06",
-      "delay": 716,
+      "delay": 611,
       "type": "http"
     },
     {
       "name": "DE - zhuhai.uk 04",
-      "delay": 764,
+      "delay": 787,
       "type": "trojan"
+    },
+    {
+      "name": "TW - zhuhai.uk 03",
+      "delay": 4643,
+      "type": "socks5"
     }
   ],
-  "live_count": 6
+  "live_count": 7
 }
