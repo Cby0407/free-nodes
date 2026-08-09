@@ -1,7 +1,7 @@
 proxies:
-- name: JP - zhuhai.uk 02
+- name: TW - zhuhai.uk 02
   type: ss
-  server: 51.21.130.209
+  server: 13.114.17.103
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -9,13 +9,6 @@ proxies:
 - name: JP - zhuhai.uk 01
   type: ss
   server: 13.50.4.72
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: TW - zhuhai.uk 02
-  type: ss
-  server: 13.114.17.103
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -53,9 +46,8 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 01
   - TW - zhuhai.uk 02
+  - JP - zhuhai.uk 01
   - GB - zhuhai.uk 04
   - GB - zhuhai.uk 06
   - DE - zhuhai.uk 04
