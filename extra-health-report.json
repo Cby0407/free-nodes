@@ -1,38 +1,38 @@
 {
-  "checked_at": "2026-08-10T02:33:18Z",
+  "checked_at": "2026-08-10T08:03:24Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 96,
   "live_nodes": [
     {
-      "name": "TW - zhuhai.uk 02",
-      "delay": 373,
-      "type": "ss"
-    },
-    {
       "name": "JP - zhuhai.uk 01",
-      "delay": 422,
+      "delay": 391,
       "type": "ss"
     },
     {
-      "name": "JP - zhuhai.uk 02",
-      "delay": 435,
+      "name": "TW - zhuhai.uk 02",
+      "delay": 411,
       "type": "ss"
     },
     {
       "name": "GB - zhuhai.uk 04",
-      "delay": 675,
+      "delay": 610,
       "type": "http"
     },
     {
       "name": "GB - zhuhai.uk 06",
-      "delay": 681,
+      "delay": 674,
       "type": "http"
     },
     {
+      "name": "JP - zhuhai.uk 02",
+      "delay": 1309,
+      "type": "ss"
+    },
+    {
       "name": "JP - zhuhai.uk 11",
-      "delay": 4279,
+      "delay": 2181,
       "type": "trojan"
     }
   ],
