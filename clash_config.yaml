@@ -314,13 +314,6 @@ proxies:
   reality-opts:
     public-key: h18Rbgv9RV558p-9Pl4g_--jJjXlTZL0-jHqNK5M_n4
     short-id: 2b8c3e90e14740d2
-- name: TW - zhuhai.uk 02
-  type: ss
-  server: 13.114.17.103
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: JP - zhuhai.uk 01
   type: ss
   server: 13.50.4.72
@@ -328,9 +321,9 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: JP - zhuhai.uk 02
+- name: TW - zhuhai.uk 02
   type: ss
-  server: 51.21.130.209
+  server: 13.114.17.103
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -349,6 +342,13 @@ proxies:
   username: a95e9198-0671-11f0-9426-f23c932f2c32
   password: a95e9198-0671-11f0-9426-f23c932f2c32
   tls: true
+- name: JP - zhuhai.uk 02
+  type: ss
+  server: 51.21.130.209
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: JP - zhuhai.uk 11
   type: trojan
   server: oplosgru-c.catcat321.com
@@ -394,11 +394,11 @@ proxy-groups:
   - ID - zhuhai.uk
   - RU - zhuhai.uk
   - EE - zhuhai.uk 03
-  - TW - zhuhai.uk 02
   - JP - zhuhai.uk 01
-  - JP - zhuhai.uk 02
+  - TW - zhuhai.uk 02
   - GB - zhuhai.uk 04
   - GB - zhuhai.uk 06
+  - JP - zhuhai.uk 02
   - JP - zhuhai.uk 11
 rules:
 - GEOSITE,CN,DIRECT
