@@ -6,24 +6,8 @@ proxies:
   username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   tls: true
-- name: GB - zhuhai.uk 06
-  type: http
-  server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
-- name: TW - zhuhai.uk 03
-  type: socks5
-  server: 106.107.236.110
-  port: 1080
-  udp: true
-  username: '111'
-  password: '111'
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - GB - zhuhai.uk 04
-  - GB - zhuhai.uk 06
-  - TW - zhuhai.uk 03
