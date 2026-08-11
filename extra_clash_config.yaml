@@ -1,31 +1,10 @@
 proxies:
-- name: JP - zhuhai.uk 02
-  type: ss
-  server: 51.21.130.209
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: JP - zhuhai.uk 01
-  type: ss
-  server: 13.50.4.72
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: GB - zhuhai.uk 04
   type: http
   server: 73721193-tcxds0-tvgkxc-hrtf.uk.oshuawei.com
   port: 443
   username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  tls: true
-- name: GB - zhuhai.uk 06
-  type: http
-  server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
   tls: true
 - name: TW - zhuhai.uk 03
   type: socks5
@@ -38,8 +17,5 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 01
   - GB - zhuhai.uk 04
-  - GB - zhuhai.uk 06
   - TW - zhuhai.uk 03

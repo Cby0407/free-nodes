@@ -1,35 +1,20 @@
 {
-  "checked_at": "2026-08-10T19:15:49Z",
+  "checked_at": "2026-08-11T02:26:36Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
   "candidates": 96,
   "live_nodes": [
     {
-      "name": "JP - zhuhai.uk 02",
-      "delay": 499,
-      "type": "ss"
-    },
-    {
-      "name": "JP - zhuhai.uk 01",
-      "delay": 507,
-      "type": "ss"
-    },
-    {
       "name": "GB - zhuhai.uk 04",
-      "delay": 713,
-      "type": "http"
-    },
-    {
-      "name": "GB - zhuhai.uk 06",
-      "delay": 745,
+      "delay": 694,
       "type": "http"
     },
     {
       "name": "TW - zhuhai.uk 03",
-      "delay": 1645,
+      "delay": 1553,
       "type": "socks5"
     }
   ],
-  "live_count": 5
+  "live_count": 2
 }
