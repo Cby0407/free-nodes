@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-11T02:26:36Z",
+  "checked_at": "2026-08-11T07:35:17Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
@@ -7,14 +7,19 @@
   "live_nodes": [
     {
       "name": "GB - zhuhai.uk 04",
-      "delay": 694,
+      "delay": 517,
+      "type": "http"
+    },
+    {
+      "name": "GB - zhuhai.uk 06",
+      "delay": 735,
       "type": "http"
     },
     {
       "name": "TW - zhuhai.uk 03",
-      "delay": 1553,
+      "delay": 2278,
       "type": "socks5"
     }
   ],
-  "live_count": 2
+  "live_count": 3
 }
