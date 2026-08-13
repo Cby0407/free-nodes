@@ -1,15 +1,820 @@
 {
-  "checked_at": "2026-08-12T19:19:15Z",
+  "checked_at": "2026-08-13T02:45:40Z",
   "source": "https://raw.githubusercontent.com/bbq-051116/TG-iamdt009/refs/heads/main/%E8%8A%82%E7%82%B9%EF%BC%81%E8%BF%99%E6%98%AF%E8%8A%82%E7%82%B9%EF%BC%81",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
-  "candidates": 96,
+  "candidates": 189,
   "live_nodes": [
     {
-      "name": "GB - zhuhai.uk 04",
-      "delay": 409,
-      "type": "http"
+      "name": "US - zhuhai.uk 10",
+      "delay": 352,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 08",
+      "delay": 353,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 07",
+      "delay": 353,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 05",
+      "delay": 356,
+      "type": "trojan"
+    },
+    {
+      "name": "FR - zhuhai.uk 03",
+      "delay": 357,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 04",
+      "delay": 358,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 03",
+      "delay": 363,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 02",
+      "delay": 363,
+      "type": "trojan"
+    },
+    {
+      "name": "FR - zhuhai.uk 01",
+      "delay": 372,
+      "type": "trojan"
+    },
+    {
+      "name": "NL - zhuhai.uk 03",
+      "delay": 375,
+      "type": "trojan"
+    },
+    {
+      "name": "FR - zhuhai.uk 05",
+      "delay": 375,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 09",
+      "delay": 375,
+      "type": "trojan"
+    },
+    {
+      "name": "FR - zhuhai.uk 06",
+      "delay": 376,
+      "type": "trojan"
+    },
+    {
+      "name": "NL - zhuhai.uk 04",
+      "delay": 382,
+      "type": "trojan"
+    },
+    {
+      "name": "NL - zhuhai.uk 02",
+      "delay": 385,
+      "type": "trojan"
+    },
+    {
+      "name": "NL - zhuhai.uk 01",
+      "delay": 386,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 01",
+      "delay": 395,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 07",
+      "delay": 397,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 04",
+      "delay": 399,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 06",
+      "delay": 400,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 02",
+      "delay": 400,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 06",
+      "delay": 437,
+      "type": "trojan"
+    },
+    {
+      "name": "US - zhuhai.uk 01",
+      "delay": 456,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 49",
+      "delay": 632,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 08",
+      "delay": 636,
+      "type": "trojan"
+    },
+    {
+      "name": "DE - zhuhai.uk 05",
+      "delay": 638,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 75",
+      "delay": 641,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 16",
+      "delay": 641,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 21",
+      "delay": 643,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 12",
+      "delay": 645,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 48",
+      "delay": 647,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 50",
+      "delay": 651,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 67",
+      "delay": 652,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 69",
+      "delay": 652,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 18",
+      "delay": 655,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 32",
+      "delay": 656,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 56",
+      "delay": 657,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 63",
+      "delay": 657,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 23",
+      "delay": 657,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 36",
+      "delay": 657,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 74",
+      "delay": 658,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 14",
+      "delay": 658,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 34",
+      "delay": 658,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 58",
+      "delay": 658,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 62",
+      "delay": 659,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 51",
+      "delay": 659,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 73",
+      "delay": 660,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 42",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 57",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 13",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 44",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 64",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 55",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 66",
+      "delay": 661,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 06",
+      "delay": 662,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 60",
+      "delay": 662,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 59",
+      "delay": 662,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 38",
+      "delay": 662,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 24",
+      "delay": 663,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 25",
+      "delay": 663,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 47",
+      "delay": 663,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 33",
+      "delay": 663,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 11",
+      "delay": 663,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 28",
+      "delay": 664,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 09",
+      "delay": 665,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 41",
+      "delay": 666,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 52",
+      "delay": 666,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 15",
+      "delay": 667,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 22",
+      "delay": 667,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 07",
+      "delay": 668,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 70",
+      "delay": 668,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 17",
+      "delay": 672,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 30",
+      "delay": 673,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 27",
+      "delay": 673,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 65",
+      "delay": 674,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 45",
+      "delay": 674,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 05",
+      "delay": 675,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 39",
+      "delay": 675,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 46",
+      "delay": 675,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 53",
+      "delay": 676,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 20",
+      "delay": 678,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 37",
+      "delay": 678,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 71",
+      "delay": 679,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 29",
+      "delay": 681,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 31",
+      "delay": 681,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 68",
+      "delay": 681,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 40",
+      "delay": 682,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 43",
+      "delay": 682,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 04",
+      "delay": 682,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 01",
+      "delay": 682,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 03",
+      "delay": 684,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 26",
+      "delay": 687,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 61",
+      "delay": 687,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 10",
+      "delay": 688,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 54",
+      "delay": 689,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 02",
+      "delay": 689,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 35",
+      "delay": 689,
+      "type": "trojan"
+    },
+    {
+      "name": "JP - zhuhai.uk 72",
+      "delay": 691,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 14",
+      "delay": 810,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 09",
+      "delay": 813,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 26",
+      "delay": 824,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 03",
+      "delay": 830,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 02",
+      "delay": 832,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 22",
+      "delay": 834,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 12",
+      "delay": 835,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 23",
+      "delay": 836,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 18",
+      "delay": 838,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 01",
+      "delay": 841,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 20",
+      "delay": 842,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 25",
+      "delay": 842,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 05",
+      "delay": 843,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 16",
+      "delay": 843,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 17",
+      "delay": 844,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 24",
+      "delay": 848,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 28",
+      "delay": 849,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 07",
+      "delay": 850,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 30",
+      "delay": 851,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 27",
+      "delay": 851,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 21",
+      "delay": 854,
+      "type": "trojan"
+    },
+    {
+      "name": "AU - zhuhai.uk 02",
+      "delay": 855,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 15",
+      "delay": 857,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 31",
+      "delay": 857,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 13",
+      "delay": 859,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 10",
+      "delay": 860,
+      "type": "trojan"
+    },
+    {
+      "name": "AU - zhuhai.uk 04",
+      "delay": 871,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 06",
+      "delay": 871,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 08",
+      "delay": 871,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 04",
+      "delay": 873,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 29",
+      "delay": 883,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 19",
+      "delay": 884,
+      "type": "trojan"
+    },
+    {
+      "name": "AU - zhuhai.uk 03",
+      "delay": 888,
+      "type": "trojan"
+    },
+    {
+      "name": "AU - zhuhai.uk 01",
+      "delay": 890,
+      "type": "trojan"
+    },
+    {
+      "name": "KR - zhuhai.uk 11",
+      "delay": 892,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 30",
+      "delay": 904,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 34",
+      "delay": 916,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 33",
+      "delay": 925,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 18",
+      "delay": 928,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 06",
+      "delay": 928,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 26",
+      "delay": 929,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 32",
+      "delay": 929,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 42",
+      "delay": 930,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 35",
+      "delay": 930,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 43",
+      "delay": 931,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 25",
+      "delay": 931,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 29",
+      "delay": 932,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 38",
+      "delay": 932,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 31",
+      "delay": 932,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 12",
+      "delay": 933,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 27",
+      "delay": 933,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 23",
+      "delay": 934,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 28",
+      "delay": 936,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 21",
+      "delay": 947,
+      "type": "trojan"
+    },
+    {
+      "name": "SG - zhuhai.uk 22",
+      "delay": 958,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 05",
+      "delay": 992,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 06",
+      "delay": 1002,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 03",
+      "delay": 1003,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 08",
+      "delay": 1011,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 07",
+      "delay": 1014,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 09",
+      "delay": 1019,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 04",
+      "delay": 1041,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 01",
+      "delay": 1042,
+      "type": "trojan"
+    },
+    {
+      "name": "HK - zhuhai.uk 02",
+      "delay": 2045,
+      "type": "trojan"
     }
   ],
-  "live_count": 1
+  "live_count": 162
 }
