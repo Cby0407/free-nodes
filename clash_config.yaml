@@ -4,17 +4,88 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: US - zhuhai.uk
+- name: NL - zhuhai.uk
+  type: vless
+  server: 95.85.247.7
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  tls: true
+  servername: cats.abvphelp.cc
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4-bYlfzBxbmfxZa5uFAobphk74V83FF5Y1lbo9l8RWQ
+    short-id: 50c30ab7
+- name: RO - zhuhai.uk
   type: http
-  server: 138.199.35.198
+  server: 193.176.84.29
   port: 9002
   tls: true
-  sni: 138.199.35.198
   skip-cert-verify: true
-- name: HK - zhuhai.uk
+- name: ID - zhuhai.uk
+  type: vmess
+  server: 366-1095.rabbitpro-in-3.com
+  port: 29032
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
+- name: US - zhuhai.uk
   type: vless
-  server: hk4-r.link-t7.com
-  port: 10129
+  server: united.nosok-top.com
+  port: 443
+  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: united.nosok-top.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: oYo4UjPmIVNSFTLYR7wuadY2v44sVuckzRAKyzi0UAE
+    short-id: a25c781f24d4209f
+- name: RO - zhuhai.uk 02
+  type: http
+  server: 84.239.49.58
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: GB - zhuhai.uk
+  type: http
+  server: 0a6a8aa6-t9zts0-tighxj-12hj8.uk.oshuawei.com
+  port: 443
+  username: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  tls: true
+  sni: 0a6a8aa6-t9zts0-tighxj-12hj8.uk.oshuawei.com
+- name: RO - zhuhai.uk 03
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 04
+  type: http
+  server: 84.239.49.41
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 05
+  type: http
+  server: 84.239.49.209
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 51.159.225.196
+  port: 23856
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: vless
+  server: us3-r.link-t7.com
+  port: 10240
   uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
   tls: true
   servername: s0.awsstatic.com
@@ -25,22 +96,20 @@ proxies:
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
-- name: NL - zhuhai.uk
+- name: RO - zhuhai.uk 06
   type: http
-  server: 82.196.9.7
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
+  server: 84.239.49.62
+  port: 9002
   tls: true
-  sni: 52c40907.acsnet.co
   skip-cert-verify: true
-- name: HK - zhuhai.uk 02
+- name: KR - zhuhai.uk
   type: vless
-  server: hk2-r.link-t7.com
-  port: 10127
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
+  server: 43.203.209.13
+  port: 10046
+  uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
   tls: true
   servername: s0.awsstatic.com
+  skip-cert-verify: true
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
@@ -48,115 +117,37 @@ proxies:
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
-- name: US - zhuhai.uk 02
+- name: GB - zhuhai.uk 02
   type: http
-  server: 138.199.35.215
-  port: 9002
-  username: 'null'
-  password: 'null'
+  server: 686ce217-t9zts0-ta5nd4-e06r.uk.oshuawei.com
+  port: 443
+  username: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
   tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
+- name: RO - zhuhai.uk 07
   type: http
-  server: 138.199.35.204
+  server: 84.239.49.187
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 08
+  type: http
+  server: 84.239.49.163
   port: 9002
   username: 'null'
   password: None
   tls: true
-  sni: 138.199.35.204
   skip-cert-verify: true
-- name: JP - zhuhai.uk
-  type: vless
-  server: jp5-r.link-t7.com
-  port: 10035
-  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-- name: KR - zhuhai.uk
-  type: trojan
-  server: gorgeous-hookworm.rooster465.autos
-  port: 443
-  password: AE62539071
-  tls: true
-  sni: gorgeous-hookworm.rooster465.autos
-- name: US - zhuhai.uk 04
+- name: US - zhuhai.uk 03
   type: http
   server: 138.199.35.196
   port: 9002
+  username: 'null'
+  password: None
   tls: true
-  skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: http
-  server: 2f24d33a-thtb40-thri9q-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
-  sni: 2f24d33a-thtb40-thri9q-azvy.cldvpuk.cdnbytescm.com
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: http
-  server: fr017.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-- name: FI - zhuhai.uk
-  type: http
-  server: extension.intern3t.ru
-  port: 8891
-  username: 85efca17026d85555ffc9b651149b5b7
-  password: x
-  tls: true
-  sni: extension.intern3t.ru
-- name: US - zhuhai.uk 05
-  type: http
-  server: 138.199.35.208
-  port: 9002
-  tls: true
-  sni: 138.199.35.208
   skip-cert-verify: true
 - name: DE - zhuhai.uk
-  type: trojan
-  server: 151.101.56.9
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: default.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
-    headers:
-      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.215
-  port: 9002
-  tls: true
-  sni: 138.199.35.215
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: http
-  server: nl199.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-- name: BR - zhuhai.uk
-  type: ss
-  server: 163.176.108.83
-  port: 59319
-  cipher: chacha20-ietf-poly1305
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-- name: DE - zhuhai.uk 02
   type: vless
   server: 83.243.86.33
   port: 443
@@ -164,15 +155,61 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: edge-fr.mystatic-cdn.ru
-  skip-cert-verify: true
   client-fingerprint: qq
   reality-opts:
     public-key: uFj8VavMOqmoW1uzvfwGlDen0J7QssvVl8-bhR9OdxE
     short-id: 39108ea24443e5a6
-- name: JP - zhuhai.uk 02
+- name: RO - zhuhai.uk 09
+  type: http
+  server: 84.239.49.240
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
   type: vless
-  server: jp1-r.link-t7.com
-  port: 10031
+  server: 27.44.127.166
+  port: 49356
+  uuid: fb957ee2-2ca0-43f3-ab86-724a9ca0b628
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dmla.huaweiyouxuan.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 10
+  type: http
+  server: 84.239.49.166
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 11
+  type: http
+  server: 193.176.84.38
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 209.148.53.153
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 12
+  type: http
+  server: 84.239.49.175
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 13
+  type: http
+  server: 193.176.84.20
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: KR - zhuhai.uk 02
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
   uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
   tls: true
   servername: s0.awsstatic.com
@@ -183,95 +220,53 @@ proxies:
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
-- name: TR - zhuhai.uk
-  type: http
-  server: br4-tr.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  sni: br4-tr.freeconnect.link
-- name: FR - zhuhai.uk 02
-  type: http
-  server: fr012.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  sni: fr012.freeconnect.link
-  skip-cert-verify: true
-- name: TR - zhuhai.uk 02
-  type: http
-  server: br3-tr.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  sni: br3-tr.freeconnect.link
-- name: US - zhuhai.uk 07
-  type: http
-  server: 138.199.35.216
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: TR - zhuhai.uk 03
-  type: http
-  server: br4-tr.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  sni: br4-tr.freeconnect.link
-  skip-cert-verify: true
-- name: GB - zhuhai.uk 02
-  type: http
-  server: d3ea7b20-ths2o0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
-  sni: d3ea7b20-ths2o0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 156.146.59.7
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: JP - zhuhai.uk 03
-  type: trojan
-  server: literate-cow.rooster465.autos
-  port: 443
-  password: AE62539071
-  tls: true
-- name: US - zhuhai.uk 09
-  type: http
-  server: 138.199.35.200
-  port: 9002
-  tls: true
-  sni: 138.199.35.200
-  skip-cert-verify: true
 - name: GB - zhuhai.uk 03
-  type: trojan
-  server: a8zbx9xj.catcat321.com
-  port: 20022
-  password: '0010996f-3eab-4804-9b3a-3a889d6767fc'
+  type: http
+  server: 686ce217-t9zts0-ta5nd4-e06r.uk.oshuawei.com
+  port: 443
+  username: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
   tls: true
-  sni: iepl.dez1.cat.bilibili.com
   skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 156.146.59.49
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  tls: true
+- name: US - zhuhai.uk 07
+  type: vmess
+  server: 366-1095.rabbitpro-in-3.com
+  port: 27116
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
 - name: US - zhuhai.uk 01
   type: trojan
   server: liked-serval.rooster465.autos
   port: 443
   password: AE62539071
   udp: true
+- name: US - zhuhai.uk 09
+  type: trojan
+  server: dominant-jaguar.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
 - name: US - zhuhai.uk 10
   type: trojan
   server: natural-collie.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: US - zhuhai.uk 08
+  type: trojan
+  server: sharing-duck.rooster465.autos
   port: 443
   password: AE62539071
   udp: true
@@ -551,6 +546,12 @@ proxies:
   port: 443
   password: AE62539071
   udp: true
+- name: JP - zhuhai.uk 03
+  type: trojan
+  server: frank-frog.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
 - name: JP - zhuhai.uk 32
   type: trojan
   server: learning-ibex.rooster465.autos
@@ -626,6 +627,12 @@ proxies:
 - name: JP - zhuhai.uk 25
   type: trojan
   server: maximum-elk.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: JP - zhuhai.uk 02
+  type: trojan
+  server: evolving-kangaroo.rooster465.autos
   port: 443
   password: AE62539071
   udp: true
@@ -764,6 +771,12 @@ proxies:
 - name: DE - zhuhai.uk 06
   type: trojan
   server: moved-bluegill.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
+- name: DE - zhuhai.uk 02
+  type: trojan
+  server: sterling-macaw.rooster465.autos
   port: 443
   password: AE62539071
   udp: true
@@ -941,12 +954,6 @@ proxies:
   port: 443
   password: AE62539071
   udp: true
-- name: KR - zhuhai.uk 02
-  type: trojan
-  server: oriented-pegasus.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
 - name: KR - zhuhai.uk 22
   type: trojan
   server: gorgeous-hookworm.rooster465.autos
@@ -1115,6 +1122,12 @@ proxies:
   port: 443
   password: AE62539071
   udp: true
+- name: HK - zhuhai.uk 02
+  type: trojan
+  server: smiling-ray.rooster465.autos
+  port: 443
+  password: AE62539071
+  udp: true
 - name: HK - zhuhai.uk 04
   type: trojan
   server: novel-mouse.rooster465.autos
@@ -1126,37 +1139,40 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - US - zhuhai.uk
-  - HK - zhuhai.uk
   - NL - zhuhai.uk
-  - HK - zhuhai.uk 02
-  - US - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - JP - zhuhai.uk
-  - KR - zhuhai.uk
-  - US - zhuhai.uk 04
+  - RO - zhuhai.uk
+  - ID - zhuhai.uk
+  - US - zhuhai.uk
+  - RO - zhuhai.uk 02
   - GB - zhuhai.uk
-  - FR - zhuhai.uk
-  - FI - zhuhai.uk
-  - US - zhuhai.uk 05
-  - DE - zhuhai.uk
-  - US - zhuhai.uk 06
+  - RO - zhuhai.uk 03
+  - RO - zhuhai.uk 04
+  - RO - zhuhai.uk 05
   - NL - zhuhai.uk 02
-  - BR - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - JP - zhuhai.uk 02
-  - TR - zhuhai.uk
-  - FR - zhuhai.uk 02
-  - TR - zhuhai.uk 02
-  - US - zhuhai.uk 07
-  - TR - zhuhai.uk 03
+  - US - zhuhai.uk 02
+  - RO - zhuhai.uk 06
+  - KR - zhuhai.uk
   - GB - zhuhai.uk 02
-  - US - zhuhai.uk 08
-  - JP - zhuhai.uk 03
-  - US - zhuhai.uk 09
+  - RO - zhuhai.uk 07
+  - RO - zhuhai.uk 08
+  - US - zhuhai.uk 03
+  - DE - zhuhai.uk
+  - RO - zhuhai.uk 09
+  - US - zhuhai.uk 04
+  - RO - zhuhai.uk 10
+  - RO - zhuhai.uk 11
+  - US - zhuhai.uk 05
+  - RO - zhuhai.uk 12
+  - RO - zhuhai.uk 13
+  - KR - zhuhai.uk 02
   - GB - zhuhai.uk 03
+  - US - zhuhai.uk 06
+  - JP - zhuhai.uk
+  - US - zhuhai.uk 07
   - US - zhuhai.uk 01
+  - US - zhuhai.uk 09
   - US - zhuhai.uk 10
+  - US - zhuhai.uk 08
   - JP - zhuhai.uk 55
   - NL - zhuhai.uk 01
   - JP - zhuhai.uk 49
@@ -1203,6 +1219,7 @@ proxy-groups:
   - JP - zhuhai.uk 73
   - JP - zhuhai.uk 14
   - JP - zhuhai.uk 64
+  - JP - zhuhai.uk 03
   - JP - zhuhai.uk 32
   - JP - zhuhai.uk 57
   - JP - zhuhai.uk 53
@@ -1216,6 +1233,7 @@ proxy-groups:
   - JP - zhuhai.uk 27
   - JP - zhuhai.uk 72
   - JP - zhuhai.uk 25
+  - JP - zhuhai.uk 02
   - JP - zhuhai.uk 63
   - JP - zhuhai.uk 68
   - JP - zhuhai.uk 22
@@ -1239,6 +1257,7 @@ proxy-groups:
   - DE - zhuhai.uk 05
   - DE - zhuhai.uk 07
   - DE - zhuhai.uk 06
+  - DE - zhuhai.uk 02
   - DE - zhuhai.uk 01
   - DE - zhuhai.uk 04
   - KR - zhuhai.uk 26
@@ -1268,7 +1287,6 @@ proxy-groups:
   - KR - zhuhai.uk 10
   - KR - zhuhai.uk 04
   - KR - zhuhai.uk 17
-  - KR - zhuhai.uk 02
   - KR - zhuhai.uk 22
   - KR - zhuhai.uk 24
   - KR - zhuhai.uk 12
@@ -1297,6 +1315,7 @@ proxy-groups:
   - HK - zhuhai.uk 05
   - HK - zhuhai.uk 08
   - HK - zhuhai.uk 01
+  - HK - zhuhai.uk 02
   - HK - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
