@@ -41,6 +41,10 @@
 - 免费 V2Ray 节点订阅链接：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
 - Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
 
+附加服务页：
+
+- Telegram Premium 会员赠送：[https://nodes.zhuhai.uk/topics/telegram-premium.html](https://nodes.zhuhai.uk/topics/telegram-premium.html)
+
 这些页面用于帮助搜索引擎和 AI 摘要系统理解本仓库主题、更新时间、固定订阅入口、教程入口和竞品差异化。
 
 排名监控会定期生成 `reports/seo-ranking-latest.md`。如需 Google 搜索排名，请在 GitHub Secrets 中配置 `SERPAPI_KEY`，无需把密钥提交到仓库。

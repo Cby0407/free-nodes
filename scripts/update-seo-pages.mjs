@@ -7,6 +7,9 @@ const REPO_URL = "https://github.com/zhuhaiuk/free-nodes";
 const RAW_BASE = "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main";
 const TUTORIAL_REPO_URL = "https://github.com/zhuhaiuk/proxy-client-tutorials";
 const SHADOWROCKET_ACCOUNT_URL = "https://zhuhai.uk/id";
+const TELEGRAM_PREMIUM_URL = `${SITE_URL}/topics/telegram-premium.html`;
+const TELEGRAM_PREMIUM_CONTACT_URL = "https://t.me/dns68?direct";
+const TELEGRAM_PREMIUM_LOGS_URL = "https://t.me/pmlogs";
 
 const KEYWORDS = [
   "免费节点",
@@ -183,6 +186,48 @@ const TOPIC_PAGES = [
   },
 ];
 
+const SERVICE_PAGES = [
+  {
+    slug: "telegram-premium",
+    title: "Telegram Premium 会员赠送",
+    url: TELEGRAM_PREMIUM_URL,
+    description:
+      "通过 Fragment 官方渠道赠送 Telegram Premium 会员，不需要登录对方账号，只需提供 Telegram username，支持 3 个月、6 个月和 12 个月。",
+  },
+];
+
+const TELEGRAM_PREMIUM_OFFERS = [
+  {
+    duration: "3 个月",
+    price: "99 元",
+    note: "适合短期体验 Telegram Premium 功能。",
+  },
+  {
+    duration: "6 个月",
+    price: "139 元",
+    note: "更适合稳定使用，单月成本更低。",
+    featured: true,
+  },
+  {
+    duration: "12 个月",
+    price: "249 元",
+    note: "适合长期使用，一次处理后更省心。",
+  },
+];
+
+const TELEGRAM_PREMIUM_KEYWORDS = [
+  "Telegram Premium",
+  "Telegram 大会员",
+  "Telegram 会员赠送",
+  "Telegram Premium 代开",
+  "Fragment Telegram Premium",
+  "Telegram Premium 3个月",
+  "Telegram Premium 6个月",
+  "Telegram Premium 12个月",
+  "TG会员",
+  "TG大会员",
+];
+
 const TRUST_POINTS = [
   {
     title: "更新机制",
@@ -350,6 +395,7 @@ function sharedStyles() {
     .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
     .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
     .button.secondary { background: #fff; color: var(--brand); }
+    .button.telegram { border-color: #2aabee; background: #2aabee; }
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
     .stat, .panel { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
     .stat strong { display: block; font-size: 1.8rem; line-height: 1.1; }
@@ -373,6 +419,21 @@ function sharedStyles() {
     .faq-list { display: grid; gap: 12px; margin-top: 12px; }
     .faq-item { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
     .faq-item strong { display: block; margin-bottom: 4px; color: var(--ink); }
+    .service-callout { margin: 32px 0 6px; padding: 18px; border: 1px solid #b8e4f8; border-radius: 8px; background: linear-gradient(135deg, #f3fbff 0%, #f4fff9 100%); }
+    .service-callout h2 { margin-top: 0; }
+    .service-callout p:last-child { margin-bottom: 0; }
+    .service-hero { margin-top: 24px; padding: 22px; border: 1px solid #b8e4f8; border-radius: 8px; background: linear-gradient(135deg, #eef9ff 0%, #f7fffb 100%); box-shadow: 0 14px 40px rgba(23, 32, 51, .08); }
+    .service-eyebrow { margin: 0 0 8px; color: #0b7db4; font-weight: 750; }
+    .premium-visual { display: grid; grid-template-columns: 74px 1fr; gap: 16px; align-items: center; margin: 20px 0; padding: 16px; border: 1px solid #d9e0ea; border-radius: 8px; background: #fff; }
+    .gift-mark { display: grid; place-items: center; width: 74px; height: 74px; border-radius: 8px; color: #fff; background: linear-gradient(145deg, #2aabee, #10b981); box-shadow: inset 0 1px 0 rgba(255,255,255,.35); }
+    .gift-mark svg { width: 42px; height: 42px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0; }
+    .pricing-card { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .pricing-card.featured { border-color: #2aabee; box-shadow: 0 10px 28px rgba(42, 171, 238, .14); }
+    .pricing-card strong { display: block; font-size: 1.65rem; line-height: 1.1; color: var(--ink); }
+    .pricing-card span { color: var(--muted); }
+    .proof-list { display: grid; gap: 10px; margin: 14px 0 0; padding: 0; list-style: none; }
+    .proof-list li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
@@ -380,7 +441,7 @@ function sharedStyles() {
     th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
     @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } }
+    @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid, .pricing-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } .premium-visual { grid-template-columns: 1fr; } }
   `;
 }
 
@@ -409,6 +470,16 @@ function topicCards() {
         <h3><a href="${topicFile(topic)}">${escapeHtml(topic.title)}</a></h3>
         <p>${escapeHtml(topic.description)}</p>
         <p class="intent">${escapeHtml(topic.intent)}</p>
+      </section>`
+  ).join("\n");
+}
+
+function serviceCards() {
+  return SERVICE_PAGES.map(
+    (service) => `      <section class="topic-card">
+        <h3><a href="${service.url.replace(`${SITE_URL}/`, "")}">${escapeHtml(service.title)}</a></h3>
+        <p>${escapeHtml(service.description)}</p>
+        <p class="intent">通过 Fragment 官方赠送，不需要登录对方账号。</p>
       </section>`
   ).join("\n");
 }
@@ -536,6 +607,7 @@ function indexHtml(stats, parts) {
         <a class="button secondary" href="#clash">Clash / Mihomo YAML</a>
         <a class="button secondary" href="#topics">关键词专题</a>
         <a class="button secondary" href="#tutorials">使用教程</a>
+        <a class="button secondary" href="topics/telegram-premium.html">Telegram Premium</a>
       </div>
     </header>
 
@@ -558,6 +630,14 @@ function indexHtml(stats, parts) {
     <div class="topic-grid">
 ${topicCards()}
     </div>
+
+    <section class="service-callout" aria-labelledby="services">
+      <h2 id="services">附加服务</h2>
+      <p>除免费节点订阅外，也整理少量与 Telegram 使用场景相关的正规服务入口。首页只保留轻量入口，具体说明放在独立页面。</p>
+      <div class="topic-grid">
+${serviceCards()}
+      </div>
+    </section>
 
     <h2>本站更新与安全说明</h2>
     <p class="note">Zhuhai Free Nodes 的核心价值是固定订阅入口、持续更新和客户端教程。页面不会为了关键词堆砌而批量生成低价值内容，长尾专题会围绕真实导入场景补充说明。</p>
@@ -702,6 +782,187 @@ ${faqMarkup(topic)}
 `;
 }
 
+function premiumGiftIcon() {
+  return `<svg viewBox="0 0 48 48" role="img" aria-label="Telegram Premium 礼物">
+            <path fill="currentColor" d="M10 20h28v20H10V20Zm3-8h7.2c-2.1-3.2-1.7-6.3.8-7.6 2.2-1.2 4.8-.1 7 2.9 2.2-3 4.8-4.1 7-2.9 2.5 1.3 2.9 4.4.8 7.6H43v8H5v-8h8Zm12.5 0c-1.7-3.8-3.3-5.1-4.5-4.4-1.3.7-.9 2.8.9 4.4h3.6Zm8.5-4.4c-1.2-.7-2.8.6-4.5 4.4h3.6c1.8-1.6 2.2-3.7.9-4.4ZM26 20H10v4h16v-4Zm4 0v4h8v-4h-8Zm-4 8H14v8h12v-8Zm4 0v8h4v-8h-4Z"/>
+          </svg>`;
+}
+
+function telegramPremiumHtml(parts) {
+  const label = dateKey(parts);
+  const offerJson = TELEGRAM_PREMIUM_OFFERS.map((offer) => ({
+    "@type": "Offer",
+    name: `Telegram Premium ${offer.duration}`,
+    price: offer.price.replace(" 元", ""),
+    priceCurrency: "CNY",
+    availability: "https://schema.org/InStock",
+    url: TELEGRAM_PREMIUM_URL,
+  }));
+
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telegram Premium 会员赠送 - Fragment 官方渠道开通</title>
+  <meta name="description" content="Telegram Premium 会员赠送服务，通过 Fragment 官方渠道赠送，不需要登录对方账号，只需提供 Telegram username。3个月99元，6个月139元，12个月249元。">
+  <meta name="keywords" content="${TELEGRAM_PREMIUM_KEYWORDS.map(escapeHtml).join(", ")}">
+  <link rel="canonical" href="${TELEGRAM_PREMIUM_URL}">
+  <meta property="og:title" content="Telegram Premium 会员赠送 - Fragment 官方渠道">
+  <meta property="og:description" content="不需要登录对方账号，只需 Telegram username，即可通过 Fragment 官方渠道赠送 Telegram Premium。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${TELEGRAM_PREMIUM_URL}">
+  <style>${sharedStyles()}</style>
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Telegram Premium 会员赠送",
+    description:
+      "通过 Fragment 官方渠道赠送 Telegram Premium 会员，不需要登录对方账号，只需提供 Telegram username。",
+    url: TELEGRAM_PREMIUM_URL,
+    provider: { "@type": "Organization", name: "Zhuhai Free Nodes" },
+    areaServed: "CN",
+    serviceType: "Telegram Premium gift service",
+    dateModified: label,
+    offers: offerJson,
+    keywords: TELEGRAM_PREMIUM_KEYWORDS.join(", "),
+  })}
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Telegram Premium 会员赠送需要登录账号吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不需要登录对方账号。通过 Fragment 官方赠送方式，只需要提供准确的 Telegram username。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Telegram username 填错了怎么办？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "赠送前请仔细确认 username。提交错误用户名可能导致赠送到错误对象，通常不可撤回。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "可以查看成交记录吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `可以访问成交记录频道：${TELEGRAM_PREMIUM_LOGS_URL}。`,
+        },
+      },
+    ],
+  })}
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "首页", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Telegram Premium 会员赠送", item: TELEGRAM_PREMIUM_URL },
+    ],
+  })}
+</head>
+<body>
+  <main>
+    <header>
+      <p class="service-eyebrow">Fragment 官方渠道 · Telegram Premium Gift</p>
+      <h1>Telegram Premium 会员赠送</h1>
+      <p>通过 Fragment 官方赠送形式开通 Telegram Premium，不需要登录对方账号，不索要验证码，只需要准确的 Telegram username。</p>
+      <div class="actions">
+        <a class="button telegram" href="${TELEGRAM_PREMIUM_CONTACT_URL}">联系开通</a>
+        <a class="button secondary" href="${TELEGRAM_PREMIUM_LOGS_URL}">查看成交记录</a>
+        <a class="button secondary" href="../">返回免费节点首页</a>
+      </div>
+    </header>
+
+    <section class="service-hero" aria-labelledby="premium-summary">
+      <h2 id="premium-summary">正规赠送方式</h2>
+      <div class="premium-visual">
+        <div class="gift-mark">${premiumGiftIcon()}</div>
+        <div>
+          <h3>只需 Telegram username</h3>
+          <p>开通流程基于 Fragment 的 Premium Gift。用户无需交出账号密码，也不需要登录 iCloud、Telegram 或任何个人账号。</p>
+        </div>
+      </div>
+      <ul class="proof-list">
+        <li><strong>不登录账号：</strong>只确认 Telegram username，避免账号密码和验证码风险。</li>
+        <li><strong>官方赠送：</strong>通过 Fragment 赠送 Telegram Premium，用户在 Telegram 内接收会员权益。</li>
+        <li><strong>记录可查：</strong>成交记录频道：<a href="${TELEGRAM_PREMIUM_LOGS_URL}">${TELEGRAM_PREMIUM_LOGS_URL}</a>。</li>
+      </ul>
+    </section>
+
+    <h2>价格套餐</h2>
+    <div class="pricing-grid">
+${TELEGRAM_PREMIUM_OFFERS.map(
+  (offer) => `      <section class="pricing-card${offer.featured ? " featured" : ""}">
+        <h3>${escapeHtml(offer.duration)}</h3>
+        <strong>${escapeHtml(offer.price)}</strong>
+        <span>${escapeHtml(offer.note)}</span>
+        <p><a class="button${offer.featured ? " telegram" : " secondary"}" href="${TELEGRAM_PREMIUM_CONTACT_URL}">咨询 ${escapeHtml(offer.duration)}</a></p>
+      </section>`
+).join("\n")}
+    </div>
+
+    <h2>开通流程</h2>
+    <ul class="step-list">
+      <li>联系 Telegram：<a href="${TELEGRAM_PREMIUM_CONTACT_URL}">t.me/dns68?direct</a>。</li>
+      <li>提供需要接收 Premium 的 Telegram username，并确认套餐时长。</li>
+      <li>通过 Fragment 官方赠送 Premium，完成后用户在 Telegram 内接收权益。</li>
+      <li>开通后可保存 Gift Sent 截图或到成交记录频道核对。</li>
+    </ul>
+
+    <h2>注意事项</h2>
+    <p class="note">请务必确认 Telegram username 拼写正确。Telegram Premium Gift 发出后通常不可撤回，也不建议把账号密码、验证码、私密聊天记录提供给任何人。</p>
+    <div class="trust-grid">
+      <section class="trust-item">
+        <h3>适合谁</h3>
+        <p>适合已有 Telegram 账号、希望开通 Premium，但不想自己处理 Fragment 或 TON 支付流程的用户。</p>
+      </section>
+      <section class="trust-item">
+        <h3>需要什么</h3>
+        <p>只需要 Telegram username。不要提供手机号、验证码、登录密码或私钥。</p>
+      </section>
+      <section class="trust-item">
+        <h3>如何验单</h3>
+        <p>完成后可查看 Telegram 内 Premium 状态，也可查看成交记录频道。</p>
+      </section>
+    </div>
+
+    <h2>相关关键词</h2>
+    <div class="tag-list">
+${TELEGRAM_PREMIUM_KEYWORDS.map((keyword) => `      <span class="tag">${escapeHtml(keyword)}</span>`).join("\n")}
+    </div>
+
+    <h2>常见问题</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <strong>Telegram Premium 会员赠送需要登录账号吗？</strong>
+        <p>不需要。只需要准确的 Telegram username，不索要账号密码和验证码。</p>
+      </div>
+      <div class="faq-item">
+        <strong>3 个月、6 个月、12 个月价格是多少？</strong>
+        <p>3 个月 99 元，6 个月 139 元，12 个月 249 元。</p>
+      </div>
+      <div class="faq-item">
+        <strong>成交记录在哪里看？</strong>
+        <p>成交记录频道：<a href="${TELEGRAM_PREMIUM_LOGS_URL}">${TELEGRAM_PREMIUM_LOGS_URL}</a>。</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>本页为 Telegram Premium 赠送服务说明页。免费节点订阅仍是本站首页核心内容。</p>
+      <p><a href="../">返回首页</a> · <a href="${TELEGRAM_PREMIUM_CONTACT_URL}">联系开通</a> · <a href="${TELEGRAM_PREMIUM_LOGS_URL}">成交记录</a></p>
+    </footer>
+  </main>
+</body>
+</html>
+`;
+}
+
 function competitorsHtml(parts) {
   return `<!doctype html>
 <html lang="zh-CN">
@@ -804,6 +1065,7 @@ async function sitemapXml(parts) {
     { loc: `${SITE_URL}/seo-insights.html`, freq: "daily", priority: "0.8" },
     { loc: `${SITE_URL}/competitors.html`, freq: "weekly", priority: "0.7" },
     ...TOPIC_PAGES.map((topic) => ({ loc: topicHref(topic), freq: "daily", priority: "0.9" })),
+    ...SERVICE_PAGES.map((service) => ({ loc: service.url, freq: "weekly", priority: "0.6" })),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -873,6 +1135,10 @@ Zhuhai Free Nodes is a GitHub project and static site for hourly updated free pr
 
 ${TOPIC_PAGES.map((topic) => `- ${topic.title}: ${topicHref(topic)}`).join("\n")}
 
+## Services
+
+${SERVICE_PAGES.map((service) => `- ${service.title}: ${service.url}`).join("\n")}
+
 ## Keywords
 
 ${KEYWORDS.join(", ")}
@@ -887,6 +1153,7 @@ function updateReadme(readme, parts) {
   const label = cnDateLabel(parts);
   const absoluteArchiveUrl = `${SITE_URL}/${archiveFile(parts)}`;
   const topicList = TOPIC_PAGES.map((topic) => `- ${topic.title}：[${topicHref(topic)}](${topicHref(topic)})`).join("\n");
+  const serviceList = SERVICE_PAGES.map((service) => `- ${service.title}：[${service.url}](${service.url})`).join("\n");
   const section = `## GitHub Pages、SEO / GEO 与每日归档
 
 如果 GitHub Pages 已开启，可以访问项目页面：
@@ -901,6 +1168,10 @@ function updateReadme(readme, parts) {
 关键词专题页：
 
 ${topicList}
+
+附加服务页：
+
+${serviceList}
 
 这些页面用于帮助搜索引擎和 AI 摘要系统理解本仓库主题、更新时间、固定订阅入口、教程入口和竞品差异化。
 
@@ -936,6 +1207,7 @@ await writeFile("index.html", indexHtml(stats, parts));
 for (const topic of TOPIC_PAGES) {
   await writeFile(topicFile(topic), topicHtml(topic, stats, parts));
 }
+await writeFile("topics/telegram-premium.html", telegramPremiumHtml(parts));
 await writeFile("competitors.html", competitorsHtml(parts));
 await writeFile(todayArchive, archiveHtml(stats, parts));
 await deindexArchiveSnapshots();
