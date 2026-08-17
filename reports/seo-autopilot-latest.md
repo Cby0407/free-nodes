@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-08-16T03:55:38.322Z
+生成时间：2026-08-17T03:58:03.541Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -37,30 +37,30 @@
 | freenodes.github.io | 7 |
 | mibei77.com | 7 |
 | clashgithub.com | 6 |
-| end-gfw.com | 6 |
+| end-gfw.com | 5 |
 | oneclash.cc | 5 |
-| proxylist.cc | 5 |
+| proxylist.cc | 4 |
 | v2rayshare.net | 4 |
 | freeclashnode.com | 3 |
-| freenode.biz | 3 |
 | linux.do | 3 |
+| wanzhuanmi.com | 3 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 164 |
-| v2ray | 158 |
-| 免费节点 | 103 |
-| 机场 | 67 |
+| clash | 157 |
+| v2ray | 155 |
+| 免费节点 | 101 |
+| 机场 | 64 |
 | trojan | 63 |
-| 小火箭 | 54 |
-| 每日更新 | 52 |
-| 节点订阅 | 45 |
+| 小火箭 | 49 |
+| 每日更新 | 43 |
+| 节点订阅 | 35 |
 | shadowrocket | 33 |
-| shadowsocks | 27 |
+| shadowsocks | 25 |
 | mihomo | 19 |
-| 免费订阅 | 15 |
+| free proxy | 16 |
 
 ## 自动策略
 
