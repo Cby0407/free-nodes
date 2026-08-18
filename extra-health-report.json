@@ -1,70 +1,30 @@
 {
-  "checked_at": "2026-08-18T07:02:57Z",
+  "checked_at": "2026-08-18T13:06:36Z",
   "source": "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
-  "candidates": 23,
+  "candidates": 8,
   "live_nodes": [
     {
-      "name": "US - zhuhai.uk 03",
-      "delay": 168,
+      "name": "JP - zhuhai.uk 01",
+      "delay": 441,
       "type": "vless"
     },
     {
-      "name": "US - zhuhai.uk 06",
-      "delay": 253,
+      "name": "NL - zhuhai.uk 02",
+      "delay": 456,
       "type": "vless"
     },
     {
-      "name": "US - zhuhai.uk 02",
-      "delay": 287,
+      "name": "CH - zhuhai.uk 01",
+      "delay": 698,
       "type": "vless"
     },
     {
       "name": "NL - zhuhai.uk 01",
-      "delay": 304,
-      "type": "vless"
-    },
-    {
-      "name": "AE - zhuhai.uk 02",
-      "delay": 483,
-      "type": "vless"
-    },
-    {
-      "name": "JP - zhuhai.uk 01",
-      "delay": 610,
-      "type": "trojan"
-    },
-    {
-      "name": "NL - zhuhai.uk 03",
-      "delay": 729,
-      "type": "vless"
-    },
-    {
-      "name": "US - zhuhai.uk 07",
-      "delay": 1056,
-      "type": "vless"
-    },
-    {
-      "name": "US - zhuhai.uk 01",
-      "delay": 1122,
-      "type": "vless"
-    },
-    {
-      "name": "FI - zhuhai.uk 02",
-      "delay": 1633,
-      "type": "vless"
-    },
-    {
-      "name": "JP - zhuhai.uk 02",
-      "delay": 2342,
-      "type": "vless"
-    },
-    {
-      "name": "FR - zhuhai.uk 01",
-      "delay": 4374,
+      "delay": 1831,
       "type": "vless"
     }
   ],
-  "live_count": 12
+  "live_count": 4
 }

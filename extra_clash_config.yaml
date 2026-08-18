@@ -1,174 +1,58 @@
 proxies:
-- name: US - zhuhai.uk 03
+- name: JP - zhuhai.uk 01
   type: vless
-  server: 169.40.42.104
+  server: 103.100.158.10
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 6a1f6c94-7785-42e2-9203-381d1f4db37e
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  skip-cert-verify: true
+  servername: www.apple.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: US - zhuhai.uk 06
+    public-key: 1xIu8ESLs4JviWXp8XaOceWAEVHqWLzNIiojA_uf8Ug
+    short-id: 83feb7aa267e9ddf
+- name: NL - zhuhai.uk 02
   type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: US - zhuhai.uk 02
-  type: vless
-  server: rm-us-04.409648.xyz
-  port: 37735
-  uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: d1--ov-gotcha07.bilivideo.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: XPA6z8rF7u5PktPHScbl5rAXzxcZr3GGcWjQsAbgGCQ
-    short-id: 42fe6ac8
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: 193.123.58.85
+  server: 84.235.171.188
   port: 62145
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
   network: tcp
-- name: AE - zhuhai.uk 02
+- name: CH - zhuhai.uk 01
   type: vless
-  server: 151.242.160.31
+  server: jhmq-16fdqod.henghesoft.net
   port: 443
-  uuid: 47b104e0-59cf-4ec4-a8fd-d080b4a756d6
+  uuid: f04037b7-125e-4666-841f-4b6bdbc9823d
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: edge-de2.mystatic-cdn.ru
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: 7vBIjExxrcwTpbknJXdAfpTjddGw8AGww0izaZUU528
-    short-id: 313328a7aa886b12
-- name: JP - zhuhai.uk 01
-  type: trojan
-  server: accepted-starling.rooster465.autos
-  port: 443
-  password: HC04361579
-  udp: true
-  sni: accepted-starling.rooster465.autos
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 03
+    public-key: cFmHbKSQO1BQnCBGd26-EA0CU-zYmduwk0Wqu0fhuT0
+    short-id: 7e8d2954eb836947
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 150.241.94.59
-  port: 13443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: 144.31.237.65
+  port: 443
+  uuid: 74099b9e-52fd-4540-b642-b8d60f3b5a2a
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: auto.cendora.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-    short-id: a7f3c91b2e6d84c0
-- name: US - zhuhai.uk 07
-  type: vless
-  server: se.morinsq.su
-  port: 443
-  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
-  udp: true
-  network: tcp
-  tls: true
-  servername: se.morinsq.su
+  servername: edge-nl.mystatic-cdn.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: uag6mQ8Nj62hZYzJhhd4ZZ-0GOGA42khyC6XtRbEnAg
-    short-id: 77ca514a4493ae52
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: 78.17.17.85
-  port: 2054
-  uuid: baadeb43-ab3d-40f2-b1e6-5e3d4104f06c
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.ibm.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
-    short-id: 423bccc9c13fb509
-  grpc-opts:
-    grpc-service-name: grpc
-- name: JP - zhuhai.uk 02
-  type: vless
-  server: 188.253.123.164
-  port: 39411
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdnjs.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-    short-id: bc8e3658db7d1323
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 163.5.153.153
-  port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
+    public-key: TC8D2edifNXaro0S31ZiC9izi8tAmXJyxdOHptwNUTw
+    short-id: 660c1badc77a422b
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 03
-  - US - zhuhai.uk 06
-  - US - zhuhai.uk 02
-  - NL - zhuhai.uk 01
-  - AE - zhuhai.uk 02
   - JP - zhuhai.uk 01
-  - NL - zhuhai.uk 03
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 01
-  - FI - zhuhai.uk 02
-  - JP - zhuhai.uk 02
-  - FR - zhuhai.uk 01
+  - NL - zhuhai.uk 02
+  - CH - zhuhai.uk 01
+  - NL - zhuhai.uk 01
