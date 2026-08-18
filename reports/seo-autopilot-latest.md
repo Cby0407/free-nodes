@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-08-17T03:58:03.541Z
+生成时间：2026-08-18T03:53:53.751Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 34 |
-| youtube.com | 10 |
+| github.com | 33 |
+| youtube.com | 8 |
 | freenodes.github.io | 7 |
 | mibei77.com | 7 |
-| clashgithub.com | 6 |
+| clashgithub.com | 5 |
 | end-gfw.com | 5 |
 | oneclash.cc | 5 |
-| proxylist.cc | 4 |
+| proxylist.cc | 5 |
+| linux.do | 4 |
 | v2rayshare.net | 4 |
-| freeclashnode.com | 3 |
-| linux.do | 3 |
-| wanzhuanmi.com | 3 |
+| freenode.biz | 3 |
+| google.com | 3 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 157 |
-| v2ray | 155 |
-| 免费节点 | 101 |
-| 机场 | 64 |
-| trojan | 63 |
-| 小火箭 | 49 |
-| 每日更新 | 43 |
-| 节点订阅 | 35 |
-| shadowrocket | 33 |
-| shadowsocks | 25 |
-| mihomo | 19 |
-| free proxy | 16 |
+| clash | 149 |
+| v2ray | 146 |
+| 免费节点 | 92 |
+| trojan | 61 |
+| 机场 | 57 |
+| 小火箭 | 50 |
+| 每日更新 | 49 |
+| 节点订阅 | 42 |
+| shadowrocket | 34 |
+| shadowsocks | 27 |
+| mihomo | 21 |
+| 免费订阅 | 13 |
 
 ## 自动策略
 
