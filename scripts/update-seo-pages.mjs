@@ -83,15 +83,15 @@ const TOPIC_PAGES = [
   },
   {
     slug: "free-proxy-nodes",
-    title: "免费代理节点",
-    h1: "免费代理节点与代理订阅入口",
+    title: "免费代理节点订阅链接",
+    h1: "免费代理节点订阅链接与导入说明",
     description:
-      "整理公开可用的免费代理节点，覆盖 HTTP、SOCKS5、VLESS、Trojan、Shadowsocks 等协议，并提供固定订阅链接。",
-    keywords: ["免费代理节点", "代理订阅", "free proxy nodes", "Trojan 节点", "Shadowsocks 节点"],
+      "免费代理节点订阅链接：提供通用 Base64 与 Clash / Mihomo YAML 固定入口，适合导入、更新、测速和公开节点格式验证。",
+    keywords: ["免费代理节点", "免费代理节点订阅", "代理订阅", "free proxy nodes", "Clash 代理订阅", "V2Ray 订阅"],
     body:
-      "本项目将公开代理节点整理为固定订阅文件，方便在不同客户端里导入。免费代理节点不保证长期稳定，更适合测试、备用和订阅格式验证。",
-    intent: "寻找免费代理节点、代理订阅和多协议公开节点入口。",
-    bestFor: ["代理协议测试", "Trojan / Shadowsocks 节点验证", "备用代理订阅", "客户端兼容性检查"],
+      "本项目将公开来源中的代理节点整理为固定订阅文件，提供通用 Base64 与 Clash / Mihomo YAML 两种导入格式。免费代理节点不保证长期稳定，更适合测试、备用和订阅格式验证。",
+    intent: "寻找免费代理节点订阅链接，并按客户端导入、更新和检查公开节点。",
+    bestFor: ["代理订阅格式测试", "Base64 与 YAML 导入检查", "备用代理订阅", "客户端兼容性检查"],
     importSteps: [
       "优先选择客户端支持的订阅格式。",
       "Clash / Mihomo 客户端使用 YAML 地址，V2Ray 生态客户端优先尝试 Base64 地址。",
@@ -102,7 +102,7 @@ const TOPIC_PAGES = [
       "如果客户端提示格式错误，可以切换另一种订阅格式测试。",
     ],
     faq: [
-      ["免费代理节点包含哪些协议？", "订阅中可能包含 VLESS、Trojan、Shadowsocks、VMess 等常见代理协议，具体以当次订阅文件为准。"],
+      ["免费代理节点包含哪些协议？", "公开来源和订阅内容会变化，请在客户端导入后检查实际协议与可用性；页面提供的是固定订阅入口，不承诺某一种协议始终存在。"],
       ["代理订阅和免费节点订阅有什么区别？", "代理订阅更强调协议和客户端导入方式，免费节点订阅更强调公开节点资源本身。"],
     ],
   },
@@ -484,6 +484,12 @@ function serviceCards() {
   ).join("\n");
 }
 
+function relatedTopicLinks(topic) {
+  return TOPIC_PAGES.filter((candidate) => candidate.slug !== topic.slug)
+    .map((candidate) => `<a href="${candidate.slug}.html">${escapeHtml(candidate.title)}</a>`)
+    .join(" · ");
+}
+
 function jsonLd(data) {
   return `<script type="application/ld+json">\n${JSON.stringify(data, null, 2)}\n  </script>`;
 }
@@ -767,6 +773,9 @@ ${topic.keywords.map((keyword) => `      <span class="tag">${escapeHtml(keyword)
       <a href="${tutorialHref("docs/android/v2rayng.md")}">V2rayNG 使用教程</a> ·
       <a href="${tutorialHref("docs/ios/shadowrocket.md")}">Shadowrocket 小火箭使用教程</a>
     </p>
+
+    <h2>按客户端和格式继续查看</h2>
+    <p>${relatedTopicLinks(topic)}</p>
 
     <h2>常见问题</h2>
     <div class="faq-list">
