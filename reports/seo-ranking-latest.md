@@ -1,6 +1,6 @@
 # SEO Ranking Report
 
-生成时间：2026-08-17T03:15:11.617Z
+生成时间：2026-08-19T12:10:05.595Z
 
 站点：https://nodes.zhuhai.uk  
 仓库：https://github.com/zhuhaiuk/free-nodes
@@ -9,18 +9,18 @@
 
 | 关键词 | 当前结果 | 匹配链接 |
 | --- | --- | --- |
-| 免费节点 | 未进入前 20 |  |
-| 免费代理节点 | 未进入前 20 |  |
-| 免费节点订阅 | 未进入前 20 |  |
-| 每小时更新免费节点 | 未进入前 20 |  |
-| Clash 节点 | 未进入前 20 |  |
-| Mihomo 节点 | 未进入前 20 |  |
-| V2Ray 节点 | 未进入前 20 |  |
-| Shadowrocket 共享账号 | 未进入前 20 |  |
-| free nodes | 未进入前 20 |  |
-| free proxy nodes | 未进入前 20 |  |
-| free Clash nodes | 未进入前 20 |  |
-| free V2Ray nodes | 未进入前 20 |  |
+| 免费节点 | 未配置 | SERPAPI_KEY is not configured |
+| 免费代理节点 | 未配置 | SERPAPI_KEY is not configured |
+| 免费节点订阅 | 未配置 | SERPAPI_KEY is not configured |
+| 每小时更新免费节点 | 未配置 | SERPAPI_KEY is not configured |
+| Clash 节点 | 未配置 | SERPAPI_KEY is not configured |
+| Mihomo 节点 | 未配置 | SERPAPI_KEY is not configured |
+| V2Ray 节点 | 未配置 | SERPAPI_KEY is not configured |
+| Shadowrocket 共享账号 | 未配置 | SERPAPI_KEY is not configured |
+| free nodes | 未配置 | SERPAPI_KEY is not configured |
+| free proxy nodes | 未配置 | SERPAPI_KEY is not configured |
+| free Clash nodes | 未配置 | SERPAPI_KEY is not configured |
+| free V2Ray nodes | 未配置 | SERPAPI_KEY is not configured |
 
 > 如需启用 Google 排名查询，请在 GitHub Secrets 中配置 `SERPAPI_KEY`。可选环境变量：`GOOGLE_GL`、`GOOGLE_HL`、`SEO_KEYWORDS`。
 
@@ -28,12 +28,12 @@
 
 | 项目 | Stars | Forks | 最近推送 | 描述 |
 | --- | --- | --- | --- | --- |
-| [zhuhaiuk/free-nodes](https://github.com/zhuhaiuk/free-nodes) | 142 | 12 | 2026-08-17T03:09:20Z | 每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端测试使用。 |
-| [snakem982/proxypool](https://github.com/snakem982/proxypool) | 2003 | 141 | 2026-08-17T00:15:05Z | Free Proxies，Free Nodes，免费节点，白嫖节点，免费vpn，免费v2ray，免费订阅，免费clash，Free VPN，Free v2ray，Free Sub，Free Clash |
-| [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers) | 18662 | 1206 | 2026-08-17T03:00:23Z | 🚀 免费订阅地址，🚀 免费节点，🚀 6小时更新一次，共享节点，节点质量高可用，完全免费。免费clash订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, 🚀 Updated every 6 hours, shared node, high-quality node availability, completely free. Free clash subscription address, free ss/v2ray/trojan node. |
-| [shuaidaoya/FreeNodes](https://github.com/shuaidaoya/FreeNodes) | 2302 | 366 | 2026-08-16T19:53:07Z | 因调整需要，项目暂时停更1-2个月，休整完毕后会如期回归，感谢理解与等待。过渡节点订阅已更新至下方链接！！！每4小时自动更新🤖，支持v2ray、clash等各种代理软件，利用SubsCheck-Win-GUI自动从节点池爬取免费节点分享 |
+| [zhuhaiuk/free-nodes](https://github.com/zhuhaiuk/free-nodes) | 150 | 16 | 2026-08-19T11:58:38Z | 每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端测试使用。 |
+| [snakem982/proxypool](https://github.com/snakem982/proxypool) | 2010 | 141 | 2026-08-19T10:15:05Z | Free Proxies，Free Nodes，免费节点，白嫖节点，免费vpn，免费v2ray，免费订阅，免费clash，Free VPN，Free v2ray，Free Sub，Free Clash |
+| [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers) | 18695 | 1210 | 2026-08-19T12:00:36Z | 🚀 免费订阅地址，🚀 免费节点，🚀 6小时更新一次，共享节点，节点质量高可用，完全免费。免费clash订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, 🚀 Updated every 6 hours, shared node, high-quality node availability, completely free. Free clash subscription address, free ss/v2ray/trojan node. |
+| [shuaidaoya/FreeNodes](https://github.com/shuaidaoya/FreeNodes) | 2305 | 365 | 2026-08-16T19:53:07Z | 因调整需要，项目暂时停更1-2个月，休整完毕后会如期回归，感谢理解与等待。过渡节点订阅已更新至下方链接！！！每4小时自动更新🤖，支持v2ray、clash等各种代理软件，利用SubsCheck-Win-GUI自动从节点池爬取免费节点分享 |
 | [littlebais/free-proxy-nodes](https://github.com/littlebais/free-proxy-nodes) | 111 | 6 | 2026-04-20T04:47:37Z | 免费vpn 免费节点 节点池 订阅器聚合 每日更新 免费翻墙 翻墙 免费科学上网 免费梯子 Free proxy nodes, V2Ray Clash SSR Trojan subscriptions, daily updated node pool, fast and stable access. |
-| [freevpnssr/freevpnssr.github.io](https://github.com/freevpnssr/freevpnssr.github.io) | 9 | 0 | 2026-08-11T16:45:13Z | 🚀 免费订阅地址，🚀 免费节点，共享节点，节点质量高可用，完全免费。免费ClashXW订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, shared node, high-quality node availability, completely free. Free ClashXW subscription address, free ss/v2ray/trojan node. |
+| [freevpnssr/freevpnssr.github.io](https://github.com/freevpnssr/freevpnssr.github.io) | 9 | 0 | 2026-08-18T05:58:39Z | 🚀 免费订阅地址，🚀 免费节点，共享节点，节点质量高可用，完全免费。免费ClashXW订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, shared node, high-quality node availability, completely free. Free ClashXW subscription address, free ss/v2ray/trojan node. |
 
 ## 下次优化方向
 
