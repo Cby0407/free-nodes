@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T09:21:27.426Z",
+  "generatedAt": "2026-10-19T07:53:13.544Z",
   "siteUrl": "https://nodes.zhuhai.uk",
   "repository": "zhuhaiuk/free-nodes",
   "google": {
@@ -86,49 +86,49 @@
       "fullName": "zhuhaiuk/free-nodes",
       "url": "https://github.com/zhuhaiuk/free-nodes",
       "description": "每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端测试使用。",
-      "stars": 328,
-      "forks": 28,
+      "stars": 351,
+      "forks": 29,
       "watchers": 5,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-10-12T09:05:26Z",
-      "updatedAt": "2026-10-12T06:27:32Z"
+      "pushedAt": "2026-10-19T05:15:27Z",
+      "updatedAt": "2026-10-19T05:15:31Z"
     },
     {
       "fullName": "snakem982/proxypool",
       "url": "https://github.com/snakem982/proxypool",
       "description": "Free Proxies，Free Nodes，免费节点，白嫖节点，免费vpn，免费v2ray，免费订阅，免费clash，Free VPN，Free v2ray，Free Sub，Free Clash",
-      "stars": 2171,
-      "forks": 153,
+      "stars": 2201,
+      "forks": 152,
       "watchers": 37,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-10-12T04:15:04Z",
-      "updatedAt": "2026-10-12T04:53:50Z"
+      "pushedAt": "2026-10-19T04:15:04Z",
+      "updatedAt": "2026-10-19T04:15:10Z"
     },
     {
       "fullName": "Pawdroid/Free-servers",
       "url": "https://github.com/Pawdroid/Free-servers",
       "description": "🚀 免费订阅地址，🚀 免费节点，🚀 6小时更新一次，共享节点，节点质量高可用，完全免费。免费clash订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, 🚀 Updated every 6 hours, shared node, high-quality node availability, completely free. Free clash subscription address, free ss/v2ray/trojan node.",
-      "stars": 19440,
-      "forks": 1237,
+      "stars": 19546,
+      "forks": 1239,
       "watchers": 300,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-10-12T09:00:14Z",
-      "updatedAt": "2026-10-12T09:18:44Z"
+      "pushedAt": "2026-10-19T07:00:13Z",
+      "updatedAt": "2026-10-19T07:15:15Z"
     },
     {
       "fullName": "shuaidaoya/FreeNodes",
       "url": "https://github.com/shuaidaoya/FreeNodes",
       "description": "因调整需要，项目暂时停更1-2个月，休整完毕后会如期回归，感谢理解与等待。过渡节点订阅已更新至下方链接！！！每4小时自动更新🤖，支持v2ray、clash等各种代理软件，利用SubsCheck-Win-GUI自动从节点池爬取免费节点分享",
-      "stars": 2311,
-      "forks": 360,
+      "stars": 2307,
+      "forks": 358,
       "watchers": 19,
       "openIssues": 5,
       "defaultBranch": "main",
       "pushedAt": "2026-08-16T19:53:07Z",
-      "updatedAt": "2026-10-12T02:50:24Z"
+      "updatedAt": "2026-10-18T09:58:33Z"
     },
     {
       "fullName": "littlebais/free-proxy-nodes",
@@ -147,12 +147,12 @@
       "url": "https://github.com/freevpnssr/freevpnssr.github.io",
       "description": "🚀 免费订阅地址，🚀 免费节点，共享节点，节点质量高可用，完全免费。免费ClashXW订阅地址，免费翻墙、免费科学上网、免费梯子、免费ss/v2ray/trojan节点、谷歌商店、翻墙梯子。🚀 Free subscription address, 🚀 Free node, shared node, high-quality node availability, completely free. Free ClashXW subscription address, free ss/v2ray/trojan node.",
       "stars": 10,
-      "forks": 0,
+      "forks": 1,
       "watchers": 0,
       "openIssues": 0,
       "defaultBranch": "main",
-      "pushedAt": "2026-10-06T06:04:13Z",
-      "updatedAt": "2026-10-06T06:04:19Z"
+      "pushedAt": "2026-10-14T06:45:19Z",
+      "updatedAt": "2026-10-14T06:45:27Z"
     }
   ]
 }
